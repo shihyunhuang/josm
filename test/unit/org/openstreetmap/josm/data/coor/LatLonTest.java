@@ -1,14 +1,13 @@
 // License: GPL. For details, see LICENSE file.
 package org.openstreetmap.josm.data.coor;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 import org.openstreetmap.josm.TestUtils;
 import org.openstreetmap.josm.data.Bounds;
@@ -252,4 +251,31 @@ public class LatLonTest {
         assertEquals(10, ll3.getCenter(ll2).lon(), 1e-10);
     }
 
+    /**
+     * Partition testing for LatLon.isValid()
+     * Partitions: valid range, out-of-range, NaN, Infinity
+     */
+    @Test
+    void partitionTest_isValid() {
+        // Valid representative values
+        assertTrue(new LatLon(37.0, -122.0).isValid());
+
+        // Boundary values (still valid)
+        assertTrue(new LatLon(-90.0, 0.0).isValid());
+        assertTrue(new LatLon(90.0, 0.0).isValid());
+        assertTrue(new LatLon(0.0, -180.0).isValid());
+        assertTrue(new LatLon(0.0, 180.0).isValid());
+
+        // Just outside boundary (invalid)
+        assertFalse(new LatLon(-90.0001, 0.0).isValid());
+        assertFalse(new LatLon(90.0001, 0.0).isValid());
+        assertFalse(new LatLon(0.0, -180.0001).isValid());
+        assertFalse(new LatLon(0.0, 180.0001).isValid());
+
+        // Special floating-point values
+        assertFalse(new LatLon(Double.NaN, 0.0).isValid());
+        assertFalse(new LatLon(0.0, Double.NaN).isValid());
+        assertFalse(new LatLon(Double.POSITIVE_INFINITY, 0.0).isValid());
+        assertFalse(new LatLon(0.0, Double.NEGATIVE_INFINITY).isValid());
+    }
 }

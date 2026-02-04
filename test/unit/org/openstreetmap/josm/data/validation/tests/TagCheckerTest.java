@@ -1,10 +1,6 @@
 // License: GPL. For details, see LICENSE file.
 package org.openstreetmap.josm.data.validation.tests;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import java.io.IOException;
 import java.text.MessageFormat;
 import java.util.Collections;
@@ -14,6 +10,9 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.junit.jupiter.api.Assertions;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -373,5 +372,27 @@ class TagCheckerTest {
         } finally {
             originalBusStop.data.remove(duplicateKey);
         }
+    }
+
+    /**
+     * Partition testing for TagChecker.isTagInPresets(key, value).
+     * Partitions:
+     *  P1: key+value exists in presets  -> true
+     *  P2: key exists but value not in presets -> false
+     *  P3: key does not exist in presets -> false
+     */
+    @Test
+    void testPartition_isTagInPresets() throws IOException {
+        // Ensure presets are initialized (same pattern used elsewhere in this test file)
+        new TagChecker().initialize();
+
+        // P1: key+value exists in presets
+        assertTrue(TagChecker.isTagInPresets("amenity", "restaurant"));
+
+        // P2: key exists but value does not exist in presets
+        assertFalse(TagChecker.isTagInPresets("amenity", "this_value_should_not_exist"));
+
+        // P3: key does not exist in presets
+        assertFalse(TagChecker.isTagInPresets("this_key_should_not_exist", "foo"));
     }
 }
