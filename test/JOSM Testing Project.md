@@ -83,7 +83,7 @@ The Layer Visibility and Active State management feature in JOSM lends itself we
 User actions such as activating a layer, switching the active layer, hiding a layer, or showing a layer trigger well-defined transitions between a finite set of states.
 The behavior is non-trivial because visibility and active state are independent dimensions. A layer may remain active even after being hidden, which contradicts an intuitive assumption that “hidden implies inactive.” This makes the feature suitable for systematic functional testing using a finite state model.
 ### Finite State Model of the Layer Workflow
-####States
+#### States
 The system state is modeled as:
 ``` State = (Visible, Active) ```
 
@@ -103,7 +103,7 @@ e3: switchActiveLayer(otherLayer) (user/system) : Changes the active layer to an
 e4: hide (setVisible(false)) (user) : Hides the layer without affecting active state.
 e5: show (setVisible(true)) (user) : Makes the layer visible again.
 
-####State Diagram:
+#### State Diagram:
 
 
 
