@@ -54,6 +54,7 @@ https://github.com/shihyunhuang/josm/blob/master/test/unit/org/openstreetmap/jos
 This suite validates the Undo/Redo history behavior using the FSM model where the observable state is `(canUndo, canRedo)`
 
 #### Test coverage (with method permalinks)
+
 - Test case 1: add_then_undo_sets_redo
 https://github.com/shihyunhuang/josm/blob/ce5e81187d30d6360836928aaa46fb296b7150a0/test/unit/org/openstreetmap/josm/UndoRedoFsmTest.java#L75
 Covers the basic transition chain **S0 (EMPTY) --ADD--> S1 (UNDO_ONLY) --UNDO-->  S2 (REDO_ONLY) --REDO --> S1 (UNDO_ONLY)** by performing `add()`,  `undo()` and `redo()`. 
@@ -116,13 +117,11 @@ https://github.com/shihyunhuang/josm/blob/master/test/unit/org/openstreetmap/jos
 
 #### Test coverage
 - Test Case 1: testSetActiveLayer
-
 Covers transition: S1 (Visible & Inactive) --setActive--> S2 (Visible & Active)
 https://github.com/shihyunhuang/josm/blob/9d8be7f32eb05724e79514f248a1c8348c01b791/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java#L26
 A visible inactive layer becomes active when ``` setActiveLayer() ``` is invoked.
 
 - Test Case 2: testSwitchActiveLayer
-
 Covers transition: S2 --switchActive--> S1
 https://github.com/shihyunhuang/josm/blob/1e89a94eafeb780ae9e522ccf74bd7a9e302b814/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java#L37
 When another layer becomes active, the original layer loses active status but remains visible.
