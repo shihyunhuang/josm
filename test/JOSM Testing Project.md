@@ -46,7 +46,7 @@ The Undo / Redo command history feature in JOSM lends itself well to a finite st
 
 
 #### State Diagram:
-
+![FSM](images/fsm_Ethan.png)
 
 ### New Functional test
 Test file: `UndoRedoFsmTest.java`  
@@ -104,7 +104,7 @@ e4: hide (setVisible(false)) (user) : Hides the layer without affecting active s
 e5: show (setVisible(true)) (user) : Makes the layer visible again.
 
 #### State Diagram:
-
+![FSM](images/fsm_Pete.png)
 
 
 
@@ -115,35 +115,35 @@ Location:``` test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java `
 https://github.com/shihyunhuang/josm/blob/master/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java
 
 #### Test coverage
--Test Case 1: testSetActiveLayer
+- Test Case 1: testSetActiveLayer
 
 Covers transition: S1 (Visible & Inactive) --setActive--> S2 (Visible & Active)
 https://github.com/shihyunhuang/josm/blob/9d8be7f32eb05724e79514f248a1c8348c01b791/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java#L26
 A visible inactive layer becomes active when ``` setActiveLayer() ``` is invoked.
 
--Test Case 2: testSwitchActiveLayer
+- Test Case 2: testSwitchActiveLayer
 
 Covers transition: S2 --switchActive--> S1
 https://github.com/shihyunhuang/josm/blob/1e89a94eafeb780ae9e522ccf74bd7a9e302b814/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java#L37
 When another layer becomes active, the original layer loses active status but remains visible.
 
--Test Case 3: testHideLayerKeepsActive
+- Test Case 3: testHideLayerKeepsActive
 Covers transition: S2 --hide--> S3
 https://github.com/shihyunhuang/josm/blob/1e89a94eafeb780ae9e522ccf74bd7a9e302b814/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java#L53
 An active layer remains active even after being hidden.
 This validates that visibility and active state are independent.
 
--Test Case 4: testHiddenLayerCanBeActive
+- Test Case 4: testHiddenLayerCanBeActive
 Covers transition: S0 --setActive--> S3
 https://github.com/shihyunhuang/josm/blob/1e89a94eafeb780ae9e522ccf74bd7a9e302b814/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java#L67
 A hidden layer can become active.This confirms that “Hidden ⇒ Inactive” is not enforced by the system.
 
--Test Case 5: testHideLayerFromVisibleInactive
+- Test Case 5: testHideLayerFromVisibleInactive
 Covers transition: S1 --hide--> S0
 https://github.com/shihyunhuang/josm/blob/1e89a94eafeb780ae9e522ccf74bd7a9e302b814/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java#L80
 A visible inactive layer becomes hidden and remains inactive.
 
--Test Case 6: testShowHiddenLayer
+- Test Case 6: testShowHiddenLayer
 Covers transition: S0 --show--> S1
 https://github.com/shihyunhuang/josm/blob/1e89a94eafeb780ae9e522ccf74bd7a9e302b814/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java#L97
 A hidden inactive layer becomes visible but does not automatically become active.
