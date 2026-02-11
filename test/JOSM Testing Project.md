@@ -112,7 +112,7 @@ e5: show (setVisible(true)) (user) : Makes the layer visible again.
 
 Test file: ```LayerStateFSMTest.java ```
 Location:``` test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java ```
-[https://github.com/shihyunhuang/josm/blob/master/test/unit/org/openstreetmap/josm/](https://github.com/shihyunhuang/josm/blob/ce5e81187d30d6360836928aaa46fb296b7150a0/test/unit/org/openstreetmap/josm/)gui/layer/LayerStateFSMTest.java
+https://github.com/shihyunhuang/josm/blob/master/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java
 
 #### Test coverage
 -Test Case 1: testSetActiveLayer
