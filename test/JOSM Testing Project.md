@@ -46,7 +46,7 @@ The Undo / Redo command history feature in JOSM lends itself well to a finite st
 
 
 #### State Diagram:
-![FSM](images/fsm_Ethan.png)
+![FSM](fsm_Ethan.png)
 
 ### New Functional test
 Test file: `UndoRedoFsmTest.java`  
@@ -104,7 +104,7 @@ e4: hide (setVisible(false)) (user) : Hides the layer without affecting active s
 e5: show (setVisible(true)) (user) : Makes the layer visible again.
 
 #### State Diagram:
-![FSM](images/fsm_Pete.png)
+![FSM](fsm_Pete.png)
 
 
 
