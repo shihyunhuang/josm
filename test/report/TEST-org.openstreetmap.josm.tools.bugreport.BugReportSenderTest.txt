@@ -1,7 +1,0 @@
-Testcase: org.openstreetmap.josm.tools.bugreport.BugReportSenderTest
-Test: testBugReportSender(WireMockRuntimeInfo) took 87 milli sec(s)
-Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 429 milli sec(s)
-3 INFO: POST http://localhost:57858/josmticket (2.56 kB) ...
-2026-02-11 20:09:21.095 INFO: POST http://localhost:57858/josmticket -> HTTP/1.1 200 (1 ms)
-2026-02-11 20:09:21.097 INFO: Opening URL: http://localhost:57858/josmticket?pdata_stored=6bccff5c0417217bfbbe5fff
-------------- ---------------- ---------------

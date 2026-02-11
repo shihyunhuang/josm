@@ -1,4 +1,0 @@
-Testcase: org.openstreetmap.josm.gui.preferences.remotecontrol.RemoteControlPreferenceTest
-Test: testRemoteControlPreference() took 1 milli sec(s)
-Test: testAddGui() took 13 milli sec(s)
-Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 88 milli sec(s)

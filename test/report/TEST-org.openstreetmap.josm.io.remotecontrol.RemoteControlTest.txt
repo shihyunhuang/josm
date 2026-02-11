@@ -1,9 +1,0 @@
-Testcase: org.openstreetmap.josm.io.remotecontrol.RemoteControlTest
-Test: testHttpListOfCommands() took 66 milli sec(s)
-Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 152 milli sec(s)
-2-11 20:09:05.650 INFO: RemoteControl::Accepting remote connections on /127.0.0.1:8111
-2026-02-11 20:09:05.650 INFO: RemoteControl::Accepting remote connections on /0:0:0:0:0:0:0:1:8111
-2026-02-11 20:09:05.651 INFO: RemoteControl received: GET / HTTP/1.1
-2026-02-11 20:09:05.652 INFO: RemoteControl::Server /127.0.0.1:8111 stopped.
-2026-02-11 20:09:05.652 INFO: RemoteControl::Server /0:0:0:0:0:0:0:1:8111 stopped.
-------------- ---------------- ---------------

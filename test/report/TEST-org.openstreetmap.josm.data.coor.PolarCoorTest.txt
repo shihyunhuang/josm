@@ -1,5 +1,0 @@
-Testcase: org.openstreetmap.josm.data.coor.PolarCoorTest
-Test: testEqualsContract() took 4 milli sec(s)
-Test: testToString() took 0 milli sec(s)
-Test: testPolarCoor() took 0 milli sec(s)
-Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 40 milli sec(s)

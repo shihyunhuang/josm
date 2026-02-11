@@ -1,7 +1,0 @@
-Testcase: org.openstreetmap.josm.gui.layer.geoimage.WikimediaCommonsLoaderTest
-Test: test() took 325 milli sec(s)
-Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 393 milli sec(s)
-----------
-2026-02-11 20:08:37.988 INFO: GET http://localhost:57811/w/api.php?format=xml&action=query&list=geosearch&gsnamespace=6&gslimit=500&gsprop=type%7Cname&gsbbox=48.0%7C11.0%7C47.0%7C12.0 -> HTTP/1.1 200 (2 ms)
-2026-02-11 20:08:38.104 INFO: Loaded 1 images from Wikimedia Commons
-------------- ---------------- ---------------

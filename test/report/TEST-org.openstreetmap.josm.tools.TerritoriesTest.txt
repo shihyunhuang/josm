@@ -1,9 +1,0 @@
-Testcase: org.openstreetmap.josm.tools.TerritoriesTest
-Test: testTaginfoGeofabrik_broken() took 1 milli sec(s)
-Test: testGetCustomTags() took 0 milli sec(s)
-Test: testUtilityClass() took 1 milli sec(s)
-Test: testIsIso3166Code() took 2 milli sec(s)
-Test: testTaginfoGeofabrik_nominal() took 5 milli sec(s)
-Tests run: 5, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 92 milli sec(s)
-o=3, column no=98, offset=146). Expected tokens are: [CURLYOPEN, SQUAREOPEN, STRING, NUMBER, TRUE, FALSE, NULL]
-------------- ---------------- ---------------

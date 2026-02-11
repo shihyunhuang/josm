@@ -1,4 +1,0 @@
-Testcase: org.openstreetmap.josm.gui.GettingStartedTest
-Test: testImageReplacement() took 0 milli sec(s) SKIPPED: see #15240, inactive for /browser/trunk/nodist/images/download.png
-Test: testImageReplacementStatic() took 103 milli sec(s)
-Tests run: 1, Failures: 0, Skipped: 1, Aborted: 0, Time elapsed: 178 milli sec(s)

@@ -1,5 +1,0 @@
-Testcase: org.openstreetmap.josm.gui.io.DownloadPrimitivesTaskTest
-Test: testDownloadPrimitivesTask() took 1 sec(s)
-Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 1 sec(s)
-6-02-11 20:44:32.337 INFO: GET https://api06.dev.openstreetmap.org/api/0.6/nodes?nodes=1 -> HTTP/1.1 200 (1.1 s)
-------------- ---------------- ---------------

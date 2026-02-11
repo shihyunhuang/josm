@@ -1,9 +1,0 @@
-Testcase: org.openstreetmap.josm.actions.AlignInLineActionTest
-Test: testSimpleWay() took 50 milli sec(s)
-Test: testLineDifferentCoordinates() took 45 milli sec(s)
-Test: testNodesOpenWay() took 47 milli sec(s)
-Test: testLineSameCoordinates1() took 49 milli sec(s)
-Test: testLineSameCoordinates2() took 48 milli sec(s)
-Test: testNodesClosedWay() took 47 milli sec(s)
-Test: testNodesOpenWays() took 46 milli sec(s)
-Tests run: 7, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 365 milli sec(s)

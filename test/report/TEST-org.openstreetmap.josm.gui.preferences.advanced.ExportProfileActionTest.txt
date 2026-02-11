@@ -1,7 +1,0 @@
-Testcase: org.openstreetmap.josm.gui.preferences.advanced.ExportProfileActionTest
-Test: testAction() took 153 milli sec(s)
-Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 229 milli sec(s)
-----
-2026-02-11 20:08:44.974 INFO: org.openstreetmap.josm.testutils.mockers.JOptionPaneSimpleMocker answering 0 to showMessageDialog with message All the preferences of this group are default, nothing to save
-2026-02-11 20:08:44.974 INFO: org.openstreetmap.josm.testutils.mockers.JOptionPaneSimpleMocker answering 0 to showMessageDialog with message All the preferences of this group are default, nothing to save
-------------- ---------------- ---------------

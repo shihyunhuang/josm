@@ -1,4 +1,0 @@
-Testcase: org.openstreetmap.josm.gui.history.NodeListViewerTest
-Test: testNodeListViewerNull() took 4 milli sec(s)
-Test: testNodeListViewerNominal() took 13 milli sec(s)
-Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 83 milli sec(s)

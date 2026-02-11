@@ -1,8 +1,0 @@
-Testcase: org.openstreetmap.josm.gui.dialogs.CommandStackDialogTest
-Test: testCommandStackDialogUndoAddCommand() took 104 milli sec(s)
-Test: testCommandStackDialogNotEmpty() took 100 milli sec(s)
-Test: testCommandStackDialogEmpty() took 94 milli sec(s)
-Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 355 milli sec(s)
-y ToggleDialogAction [Command Stack]
-2026-02-11 20:44:02.587 INFO: Keystroke shift alt pressed O is already assigned to ToggleDialogAction [Command Stack], will be overridden by ToggleDialogAction [Command Stack]
-------------- ---------------- ---------------

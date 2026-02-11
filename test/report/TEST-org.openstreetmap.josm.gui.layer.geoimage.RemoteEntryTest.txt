@@ -1,4 +1,0 @@
-Testcase: org.openstreetmap.josm.gui.layer.geoimage.RemoteEntryTest
-Test: testNonRegression23119() took 1 milli sec(s)
-Test: testHashCodeEquals() took 34 milli sec(s)
-Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 108 milli sec(s)

@@ -1,6 +1,0 @@
-Testcase: org.openstreetmap.josm.actions.mapmode.DeleteActionTest
-Test: testMode() took 90 milli sec(s)
-Test: testEnumDeleteMode() took 72 milli sec(s)
-Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 203 milli sec(s)
-ctrl pressed DELETE is already assigned to org.openstreetmap.josm.actions.mapmode.DeleteAction@219a5d49, will be overridden by org.openstreetmap.josm.actions.mapmode.DeleteAction@2c6a7ab
-------------- ---------------- ---------------

@@ -1,6 +1,0 @@
-Testcase: org.openstreetmap.josm.data.validation.tests.AddressesTest
-Test: testDuplicateHouseNumber() took 3 milli sec(s)
-Test: testCheckForDuplicatePOIBuildingAddresses() took 1 milli sec(s)
-Test: testMultiAddressDuplicates() took 0 milli sec(s)
-Test: testHouseNumberWithoutStreet() took 1 milli sec(s)
-Tests run: 4, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 56 milli sec(s)

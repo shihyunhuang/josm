@@ -1,9 +1,0 @@
-Testcase: org.openstreetmap.josm.gui.preferences.plugin.PluginPreferenceTest
-Test: testBuildDownloadSummary() took 53 milli sec(s)
-Test: testNotifyDownloadResults() took 98 milli sec(s)
-Test: testPluginPreference() took 47 milli sec(s)
-Test: testAddGui() took 64 milli sec(s)
-Tests run: 4, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 340 milli sec(s)
-html>
-2026-02-11 20:08:52.325 INFO: org.openstreetmap.josm.testutils.mockers.HelpAwareOptionPaneMocker answering 0 to HelpAwareOptionPane with message <html>Please restart JOSM to activate the downloaded plugins.</html>
-------------- ---------------- ---------------

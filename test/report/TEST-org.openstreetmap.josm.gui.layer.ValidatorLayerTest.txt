@@ -1,3 +1,0 @@
-Testcase: org.openstreetmap.josm.gui.layer.ValidatorLayerTest
-Test: testValidatorLayer() took 116 milli sec(s)
-Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 182 milli sec(s)

@@ -1,9 +1,0 @@
-Testcase: org.openstreetmap.josm.actions.CombineWayActionTest
-Test: testTicket18367NeedsSplit() took 6 milli sec(s)
-Test: testEqualsContract() took 100 milli sec(s)
-Test: testTicket11957() took 2 milli sec(s)
-Test: testTicket18367() took 1 milli sec(s)
-Test: testTicket18385() took 0 milli sec(s)
-Test: testTicket18387() took 1 milli sec(s)
-Test: testDetectReversedWays() took 1 milli sec(s)
-Tests run: 7, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 144 milli sec(s)

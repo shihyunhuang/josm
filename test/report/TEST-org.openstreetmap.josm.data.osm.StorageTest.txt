@@ -1,3 +1,0 @@
-Testcase: org.openstreetmap.josm.data.osm.StorageTest
-Test: testEqualsContract() took 10 milli sec(s)
-Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 57 milli sec(s)

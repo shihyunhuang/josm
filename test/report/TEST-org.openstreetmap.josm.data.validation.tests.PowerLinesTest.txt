@@ -1,8 +1,0 @@
-Testcase: org.openstreetmap.josm.data.validation.tests.PowerLinesTest
-Test: testNonRegression22684() took 4 milli sec(s)
-Test: testPowerlineCrossingOcean() took 2 milli sec(s)
-Test: testNoBreakInLine() took 0 milli sec(s)
-Test: testConnectionAndRefInLine() took 0 milli sec(s)
-Test: testBreakInLine() took 0 milli sec(s)
-Test: testRefDiscontinuityInLine() took 1 milli sec(s)
-Tests run: 6, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 57 milli sec(s)

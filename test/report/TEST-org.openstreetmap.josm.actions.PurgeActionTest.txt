@@ -1,6 +1,0 @@
-Testcase: org.openstreetmap.josm.actions.PurgeActionTest
-Test: testCopyStringWayRelation() took 92 milli sec(s)
-Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 127 milli sec(s)
-1 20:45:59.112 INFO: Keystroke shift ctrl pressed P is already assigned to org.openstreetmap.josm.actions.PurgeAction@2f46ce68, will be overridden by org.openstreetmap.josm.actions.PurgeAction@3ead231
-2026-02-11 20:45:59.112 INFO: Registered toolbar action purge overwritten: org.openstreetmap.josm.actions.PurgeAction gets org.openstreetmap.josm.actions.PurgeAction
-------------- ---------------- ---------------

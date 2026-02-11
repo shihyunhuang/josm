@@ -1,7 +1,0 @@
-Testcase: org.openstreetmap.josm.actions.SelectByInternalPointActionTest
-Test: testNoDataSet() took 64 milli sec(s)
-Test: testGetSurroundingObjects() took 96 milli sec(s)
-Test: testGetSmallestSurroundingObject() took 87 milli sec(s)
-Test: testPerformSelection() took 89 milli sec(s)
-Test: testUtilityClass() took 67 milli sec(s)
-Tests run: 5, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 442 milli sec(s)

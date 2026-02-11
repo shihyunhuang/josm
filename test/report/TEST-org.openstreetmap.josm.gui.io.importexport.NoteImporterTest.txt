@@ -1,7 +1,0 @@
-Testcase: org.openstreetmap.josm.gui.io.importexport.NoteImporterTest
-Test: testTicket12531() took 2 milli sec(s)
-Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 78 milli sec(s)
--
-2026-02-11 20:08:30.546 INFO: Open file: /Users/petechentw/Documents/261P_Project/josm/test/data/regress/12531/notes.osn (17450 bytes)
-2026-02-11 20:08:30.548 INFO: Open file: /Users/petechentw/Documents/261P_Project/josm/test/data/regress/12531/notes.osn (17450 bytes) completed in 1 ms
-------------- ---------------- ---------------

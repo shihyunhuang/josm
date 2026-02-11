@@ -1,4 +1,0 @@
-Testcase: org.openstreetmap.josm.data.gpx.GpxTimezoneTest
-Test: testParseTimezone() took 1 milli sec(s)
-Test: testFormatTimezone() took 0 milli sec(s)
-Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 34 milli sec(s)

@@ -1,4 +1,0 @@
-Testcase: org.openstreetmap.josm.gui.preferences.server.ProxyPreferenceTest
-Test: testAddGui() took 19 milli sec(s)
-Test: testProxyPreference() took 0 milli sec(s)
-Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 97 milli sec(s)
