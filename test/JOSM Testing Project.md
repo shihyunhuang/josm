@@ -124,8 +124,7 @@ A visible inactive layer becomes active when ``` setActiveLayer() ``` is invoked
 -Test Case 2: testSwitchActiveLayer
 
 Covers transition: S2 --switchActive--> S1
-https://github.com/shihyunhuang/josm/blob/1e89a94eafeb780ae9e522ccf74bd7a9e302b814
-/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java#L37
+https://github.com/shihyunhuang/josm/blob/1e89a94eafeb780ae9e522ccf74bd7a9e302b814/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java#L37
 When another layer becomes active, the original layer loses active status but remains visible.
 
 -Test Case 3: testHideLayerKeepsActive
@@ -149,8 +148,5 @@ Covers transition: S0 --show--> S1
 https://github.com/shihyunhuang/josm/blob/1e89a94eafeb780ae9e522ccf74bd7a9e302b814/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java#L97
 A hidden inactive layer becomes visible but does not automatically become active.
 
--Test Case 6: testShowHiddenLayer
-Covers transition: S0 --show--> S1
-https://github.com/shihyunhuang/josm/blob/master/test/unit/org/openstreetmap/josm/gui/layer/LayerStateFSMTest.java#L97
 
-A hidden inactive layer becomes visible but does not automatically become active.
+
