@@ -1,8 +1,8 @@
 Testcase: org.openstreetmap.josm.actions.UploadActionTest
-Test: testNonRegression21476() took 338 milli sec(s)
-Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 375 milli sec(s)
--04 20:40:36.006 INFO: Keystroke shift ctrl pressed UP is already assigned to org.openstreetmap.josm.actions.UploadAction@119a8e66, will be overridden by org.openstreetmap.josm.actions.UploadAction@4faea0e
-2026-02-04 20:40:36.006 INFO: Registered toolbar action upload overwritten: org.openstreetmap.josm.actions.UploadAction gets org.openstreetmap.josm.actions.UploadAction
+Test: testNonRegression21476() took 346 milli sec(s)
+Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 388 milli sec(s)
+-11 20:46:01.884 INFO: Keystroke shift ctrl pressed UP is already assigned to org.openstreetmap.josm.actions.UploadAction@2f647565, will be overridden by org.openstreetmap.josm.actions.UploadAction@3d77954f
+2026-02-11 20:46:01.884 INFO: Registered toolbar action upload overwritten: org.openstreetmap.josm.actions.UploadAction gets org.openstreetmap.josm.actions.UploadAction
 ------------- ---------------- ---------------
 ------------- Standard Error ---------------
 Exception in thread "AWT-EventQueue-0" java.awt.HeadlessException
@@ -13,7 +13,7 @@ Exception in thread "AWT-EventQueue-0" java.awt.HeadlessException
 	at java.desktop/java.awt.Dialog.<init>(Unknown Source)
 	at java.desktop/javax.swing.JDialog.<init>(JDialog.java:590)
 	at java.desktop/javax.swing.JDialog.<init>(JDialog.java:526)
-	at org.openstreetmap.josm.gui.io.AbstractUploadDialog.<init>(AbstractUploadDialog.java:50)
+	at org.openstreetmap.josm.gui.io.AbstractUploadDialog.<init>(Unknown Source)
 	at org.openstreetmap.josm.gui.io.UploadDialog.<init>(UploadDialog.java:105)
 	at org.openstreetmap.josm.gui.io.UploadDialog.getUploadDialog(UploadDialog.java:117)
 	at org.openstreetmap.josm.actions.UploadAction.realUploadData(UploadAction.java:292)

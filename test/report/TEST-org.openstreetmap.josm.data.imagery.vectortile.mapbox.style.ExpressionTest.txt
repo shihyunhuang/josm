@@ -2,4 +2,4 @@ Testcase: org.openstreetmap.josm.data.imagery.vectortile.mapbox.style.Expression
 Test: testInvalidJson() took 1 milli sec(s)
 Test: testBasicExpressions() took 1 milli sec(s)
 Test: testEquals() took 1 milli sec(s)
-Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 41 milli sec(s)
+Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 43 milli sec(s)

@@ -1,7 +1,7 @@
 Testcase: org.openstreetmap.josm.tools.bugreport.BugReportExceptionHandlerTest
 Test: testHandleException() took 2 milli sec(s)
-Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 86 milli sec(s)
-6-02-04 20:43:15.195 SEVERE: Handled by bug report queue: java.lang.Exception: testHandleException
+Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 111 milli sec(s)
+6-02-11 20:09:20.902 SEVERE: Handled by bug report queue: java.lang.Exception: testHandleException
 java.lang.Exception: testHandleException
 	at org.openstreetmap.josm.tools.bugreport.BugReportExceptionHandlerTest.testHandleException(BugReportExceptionHandlerTest.java:22)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -61,7 +61,7 @@ java.lang.Exception: testHandleException
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-ReportedException [thread=Thread[#4780,ForkJoinPool-609-worker-1,5,main], exception=java.lang.Exception: testHandleException, methodWarningFrom=BugReportExceptionHandler#handleException]
+ReportedException [thread=Thread[#4801,ForkJoinPool-610-worker-1,5,main], exception=java.lang.Exception: testHandleException, methodWarningFrom=BugReportExceptionHandler#handleException]
 	at org.openstreetmap.josm.tools.bugreport.BugReport.intercept(BugReport.java:222)
 	at org.openstreetmap.josm.tools.bugreport.BugReportExceptionHandler.handleException(BugReportExceptionHandler.java:22)
 	at org.openstreetmap.josm.tools.bugreport.BugReportExceptionHandlerTest.testHandleException(BugReportExceptionHandlerTest.java:22)

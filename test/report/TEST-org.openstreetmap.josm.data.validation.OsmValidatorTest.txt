@@ -1,10 +1,10 @@
 Testcase: org.openstreetmap.josm.data.validation.OsmValidatorTest
-Test: testRemoveTests() took 2 milli sec(s)
+Test: testRemoveTests() took 1 milli sec(s)
 Test: testCleanupIgnoredErrorsTicket17837() took 1 milli sec(s)
-Test: testCleanupIgnoredErrorsTicket18223() took 1 milli sec(s)
+Test: testCleanupIgnoredErrorsTicket18223() took 2 milli sec(s)
 Test: testUtilityClass() took 0 milli sec(s)
 Test: testCleanupIgnoredErrors1() took 0 milli sec(s)
-Tests run: 5, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 57 milli sec(s)
+Tests run: 5, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 58 milli sec(s)
 it>()
 	at java.base/java.lang.Class.getConstructor0(Class.java:3187)
 	at java.base/java.lang.Class.getConstructor(Class.java:2199)

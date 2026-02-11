@@ -1,23 +1,24 @@
 Testcase: org.openstreetmap.josm.actions.AddImageryLayerActionTest
 Test: testNonRegression24097() took 0 milli sec(s) SKIPPED: See #24097 comment 3
-Test: testActionPerformedEnabledTms() took 92 milli sec(s)
-Test: testActionPerformedEnabledWms(WireMockRuntimeInfo) took 326 milli sec(s)
-Test: testEnabledState() took 1 milli sec(s)
-Test: testActionPerformedDisabled() took 2 milli sec(s)
-Tests run: 4, Failures: 0, Skipped: 1, Aborted: 0, Time elapsed: 1 sec(s)
-:58774/wms?apikey=...stripped...&SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0 -> HTTP/1.1 404 (2 ms)
-2026-02-04 20:40:27.798 INFO: GET http://localhost:58774/wms?apikey=...stripped...&SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.1.1 -> HTTP/1.1 200 (6 ms)
-2026-02-04 20:40:27.801 INFO: Skipping unsupported image format image/svg+xml
-org.openstreetmap.josm.io.imagery.WMSImagery@318fcd04
-2026-02-04 20:40:27.829 INFO: Registered toolbar action imagery_foo_tms overwritten: org.openstreetmap.josm.actions.AddImageryLayerAction gets org.openstreetmap.josm.actions.AddImageryLayerAction
-2026-02-04 20:40:27.830 INFO: Registered toolbar action imagery_foo overwritten: org.openstreetmap.josm.actions.AddImageryLayerAction gets org.openstreetmap.josm.actions.AddImageryLayerAction
+Test: testActionPerformedEnabledTms() took 93 milli sec(s)
+Test: testActionPerformedEnabledWms(WireMockRuntimeInfo) took 341 milli sec(s)
+Test: testEnabledState() took 2 milli sec(s)
+Test: testActionPerformedDisabled() took 1 milli sec(s)
+Tests run: 4, Failures: 0, Skipped: 1, Aborted: 0, Time elapsed: 953 milli sec(s)
+:58384/wms?apikey=...stripped...&SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0 -> HTTP/1.1 404 (2 ms)
+2026-02-11 20:45:53.531 INFO: GET http://localhost:58384/wms?apikey=...stripped...&SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.1.1 -> HTTP/1.1 200 (7 ms)
+2026-02-11 20:45:53.536 INFO: Skipping unsupported image format image/svg+xml
+org.openstreetmap.josm.io.imagery.WMSImagery@578a4a43
+2026-02-11 20:45:53.562 INFO: Registered toolbar action imagery_foo_tms overwritten: org.openstreetmap.josm.actions.AddImageryLayerAction gets org.openstreetmap.josm.actions.AddImageryLayerAction
+2026-02-11 20:45:53.563 INFO: Registered toolbar action imagery_foo overwritten: org.openstreetmap.josm.actions.AddImageryLayerAction gets org.openstreetmap.josm.actions.AddImageryLayerAction
+2026-02-11 20:45:53.803 INFO: GET https://josm.openstreetmap.de/wiki/StartupPage -> HTTP/1.1 200 (1.6 s)
 ------------- ---------------- ---------------
 ------------- Standard Error ---------------
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-2026-02-04 20:40:27.682 WARNING: java.io.IOException: The requested URL http://localhost:58774/wms?apikey=random_key&SERVICE=WMS&REQUEST=GetCapabilities was not found
-java.io.IOException: The requested URL http://localhost:58774/wms?apikey=random_key&SERVICE=WMS&REQUEST=GetCapabilities was not found
+2026-02-11 20:45:53.415 WARNING: java.io.IOException: The requested URL http://localhost:58384/wms?apikey=random_key&SERVICE=WMS&REQUEST=GetCapabilities was not found
+java.io.IOException: The requested URL http://localhost:58384/wms?apikey=random_key&SERVICE=WMS&REQUEST=GetCapabilities was not found
 	at org.openstreetmap.josm.io.CachedFile.checkLocal(CachedFile.java:515)
 	at org.openstreetmap.josm.io.CachedFile.getFile(CachedFile.java:286)
 	at org.openstreetmap.josm.io.CachedFile.getInputStream(CachedFile.java:227)
@@ -87,8 +88,8 @@ java.io.IOException: The requested URL http://localhost:58774/wms?apikey=random_
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:40:27.791 WARNING: java.io.IOException: The requested URL http://localhost:58774/wms?apikey=random_key&SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0 was not found
-java.io.IOException: The requested URL http://localhost:58774/wms?apikey=random_key&SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0 was not found
+2026-02-11 20:45:53.523 WARNING: java.io.IOException: The requested URL http://localhost:58384/wms?apikey=random_key&SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0 was not found
+java.io.IOException: The requested URL http://localhost:58384/wms?apikey=random_key&SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0 was not found
 	at org.openstreetmap.josm.io.CachedFile.checkLocal(CachedFile.java:515)
 	at org.openstreetmap.josm.io.CachedFile.getFile(CachedFile.java:286)
 	at org.openstreetmap.josm.io.CachedFile.getInputStream(CachedFile.java:227)

@@ -1,23 +1,23 @@
 Testcase: org.openstreetmap.josm.tools.LoggingTest
-Test: testErrorString() took 0 milli sec(s)
+Test: testErrorString() took 1 milli sec(s)
 Test: testInfoStringObjectArray() took 0 milli sec(s)
 Test: testInfoString() took 0 milli sec(s)
-Test: testClearLastErrorAndWarnings() took 0 milli sec(s)
+Test: testClearLastErrorAndWarnings() took 1 milli sec(s)
 Test: testSetLogLevel() took 0 milli sec(s)
 Test: testIsLoggingEnabled() took 0 milli sec(s)
 Test: testLogWithStackTraceLevelThrowable() took 1 milli sec(s)
 Test: testTraceString() took 0 milli sec(s)
-Test: testDebugStringObjectArray() took 1 milli sec(s)
+Test: testDebugStringObjectArray() took 0 milli sec(s)
 Test: testTraceStringObjectArray() took 0 milli sec(s)
 Test: testWarnString() took 0 milli sec(s)
 Test: testLogLevelThrowable() took 0 milli sec(s)
-Test: testErrorStringObjectArray() took 0 milli sec(s)
-Test: testGetLastErrorAndWarnings() took 3 milli sec(s)
+Test: testErrorStringObjectArray() took 1 milli sec(s)
+Test: testGetLastErrorAndWarnings() took 2 milli sec(s)
 Test: testLogWithStackTraceLevelStringThrowable() took 0 milli sec(s)
 Test: testWarnStringObjectArray() took 1 milli sec(s)
 Test: testLogLevelStringThrowable() took 0 milli sec(s)
 Test: testDebugString() took 0 milli sec(s)
-Tests run: 18, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 99 milli sec(s)
+Tests run: 18, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 95 milli sec(s)
 d(InvocationInterceptorChain.java:131)
 	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
 	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
@@ -72,7 +72,7 @@ d(InvocationInterceptorChain.java:131)
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:12.333 FINEST: java.io.IOException
+2026-02-11 20:09:18.251 FINEST: java.io.IOException
 java.io.IOException
 	at org.openstreetmap.josm.tools.LoggingTest.lambda$testLogWithStackTraceLevelThrowable$4(LoggingTest.java:206)
 	at org.openstreetmap.josm.tools.LoggingTest.testLogCaptured(LoggingTest.java:81)
@@ -135,7 +135,7 @@ java.io.IOException
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:12.333 FINEST: java.io.IOException: java.io.IOException. Cause: java.io.IOException
+2026-02-11 20:09:18.251 FINEST: java.io.IOException: java.io.IOException. Cause: java.io.IOException
 java.io.IOException: java.io.IOException
 	at org.openstreetmap.josm.tools.LoggingTest.lambda$testLogWithStackTraceLevelThrowable$6(LoggingTest.java:209)
 	at org.openstreetmap.josm.tools.LoggingTest.testLogCaptured(LoggingTest.java:81)
@@ -200,11 +200,11 @@ java.io.IOException: java.io.IOException
 Caused by: java.io.IOException
 	... 60 more
 
-2026-02-04 20:43:12.333 FINEST: test
-2026-02-04 20:43:12.334 FINE: test x 1
-2026-02-04 20:43:12.334 FINEST: test x 1
-2026-02-04 20:43:12.334 FINEST: java.io.IOException: x
-2026-02-04 20:43:12.337 FINEST: y: java.io.IOException: x
+2026-02-11 20:09:18.252 FINEST: test
+2026-02-11 20:09:18.252 FINE: test x 1
+2026-02-11 20:09:18.252 FINEST: test x 1
+2026-02-11 20:09:18.252 FINEST: java.io.IOException: x
+2026-02-11 20:09:18.255 FINEST: y: java.io.IOException: x
 java.io.IOException: x
 	at org.openstreetmap.josm.tools.LoggingTest.lambda$testLogWithStackTraceLevelStringThrowable$2(LoggingTest.java:223)
 	at org.openstreetmap.josm.tools.LoggingTest.testLogCaptured(LoggingTest.java:81)
@@ -267,13 +267,13 @@ java.io.IOException: x
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:12.338 FINEST: y: java.io.IOException: x
-2026-02-04 20:43:12.338 FINE: test
+2026-02-11 20:09:18.256 FINEST: y: java.io.IOException: x
+2026-02-11 20:09:18.256 FINE: test
 ------------- ---------------- ---------------
 ------------- Standard Error ---------------
-2026-02-04 20:43:12.331 SEVERE: test
-2026-02-04 20:43:12.332 SEVERE: x
-2026-02-04 20:43:12.333 SEVERE: java.io.IOException: x
+2026-02-11 20:09:18.250 SEVERE: test
+2026-02-11 20:09:18.250 SEVERE: x
+2026-02-11 20:09:18.251 SEVERE: java.io.IOException: x
 java.io.IOException: x
 	at org.openstreetmap.josm.tools.LoggingTest.lambda$testLogWithStackTraceLevelThrowable$1(LoggingTest.java:202)
 	at org.openstreetmap.josm.tools.LoggingTest.testLogCaptured(LoggingTest.java:81)
@@ -336,114 +336,114 @@ java.io.IOException: x
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:12.334 WARNING: test
-2026-02-04 20:43:12.334 SEVERE: java.io.IOException: x
-2026-02-04 20:43:12.334 SEVERE: test x 1
-2026-02-04 20:43:12.334 WARNING: x
-2026-02-04 20:43:12.335 SEVERE: y
+2026-02-11 20:09:18.252 WARNING: test
+2026-02-11 20:09:18.252 SEVERE: java.io.IOException: x
+2026-02-11 20:09:18.253 SEVERE: test x 1
+2026-02-11 20:09:18.253 WARNING: x
+2026-02-11 20:09:18.253 SEVERE: y
 z
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.335 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.336 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: x
-2026-02-04 20:43:12.337 SEVERE: y: java.io.IOException: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.253 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.254 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: x
+2026-02-11 20:09:18.255 SEVERE: y: java.io.IOException: x
 java.io.IOException: x
 	at org.openstreetmap.josm.tools.LoggingTest.lambda$testLogWithStackTraceLevelStringThrowable$1(LoggingTest.java:222)
 	at org.openstreetmap.josm.tools.LoggingTest.testLogCaptured(LoggingTest.java:81)
@@ -506,6 +506,6 @@ java.io.IOException: x
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:12.337 WARNING: test x 1
-2026-02-04 20:43:12.338 SEVERE: y: java.io.IOException: x
+2026-02-11 20:09:18.255 WARNING: test x 1
+2026-02-11 20:09:18.256 SEVERE: y: java.io.IOException: x
 ------------- ---------------- ---------------

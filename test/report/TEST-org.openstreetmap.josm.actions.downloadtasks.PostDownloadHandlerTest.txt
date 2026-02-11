@@ -2,8 +2,8 @@ Testcase: org.openstreetmap.josm.actions.downloadtasks.PostDownloadHandlerTest
 Test: testRunNoError() took 1 milli sec(s)
 Test: testRunOneError() took 0 milli sec(s)
 Test: testRunMultipleErrors() took 2 milli sec(s)
-Test: testRunExceptionFuture() took 0 milli sec(s)
-Tests run: 4, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 43 milli sec(s)
+Test: testRunExceptionFuture() took 1 milli sec(s)
+Tests run: 4, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 47 milli sec(s)
 HandlerTest.testRunMultipleErrors(PostDownloadHandlerTest.java:149)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
@@ -63,7 +63,7 @@ HandlerTest.testRunMultipleErrors(PostDownloadHandlerTest.java:149)
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:40:38.310 SEVERE: java.lang.Exception: bar
+2026-02-11 20:45:40.006 SEVERE: java.lang.Exception: bar
 java.lang.Exception: bar
 	at org.openstreetmap.josm.actions.downloadtasks.PostDownloadHandlerTest.testRunMultipleErrors(PostDownloadHandlerTest.java:149)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -124,7 +124,7 @@ java.lang.Exception: bar
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:40:38.311 SEVERE: java.util.concurrent.ExecutionException: testRunExceptionFuture
+2026-02-11 20:45:40.006 SEVERE: java.util.concurrent.ExecutionException: testRunExceptionFuture
 java.util.concurrent.ExecutionException: testRunExceptionFuture
 	at org.openstreetmap.josm.actions.downloadtasks.PostDownloadHandlerTest$2.get(PostDownloadHandlerTest.java:97)
 	at org.openstreetmap.josm.actions.downloadtasks.PostDownloadHandler.run(PostDownloadHandler.java:84)

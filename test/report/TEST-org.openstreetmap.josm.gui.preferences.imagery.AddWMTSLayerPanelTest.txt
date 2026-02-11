@@ -1,7 +1,7 @@
 Testcase: org.openstreetmap.josm.gui.preferences.imagery.AddWMTSLayerPanelTest
-Test: testAddWMTSLayerPanel() took 4 milli sec(s)
+Test: testAddWMTSLayerPanel() took 3 milli sec(s)
 Test: testGetImageryInfo() took 1 milli sec(s)
-Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 84 milli sec(s)
+Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 82 milli sec(s)
 RLException: no protocol:
 java.net.MalformedURLException: no protocol: 
 	at java.base/java.net.URL.<init>(URL.java:735)

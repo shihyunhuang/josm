@@ -265,12 +265,12 @@ buildings_tools.jar;https://josm.openstreetmap.de/osmsvn/applications/editors/jo
 cadastre-fr.jar;https://josm.openstreetmap.de/osmsvn/applications/editors/josm/dist/cadastre-fr.jar
 	Manifest-Version: 1.0
 	Ant-Version: Apache Ant 1.10.15
-	Created-By: 21.0.9 (Oracle Corporation)
+	Created-By: 25.0.2 (Oracle Corporation)
 	Plugin-Mainversion: 19044
-	Plugin-Version: 36474
+	Plugin-Version: 36480
 	Plugin-Class: org.openstreetmap.josm.plugins.fr.cadastre.CadastrePlugin
 	Plugin-Description: A special handler for the French land registry WMS server.
-	Plugin-Date: 2026-01-31T11:57:45.973843Z
+	Plugin-Date: 2026-02-09T17:37:49.812883Z
 	Author: Pieren;Don-vip
 	Plugin-Link: https://wiki.openstreetmap.org/wiki/FR:JOSM/Fr:Plugin/Cadastre
 	Plugin-Icon: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAADAFBMVEUAAACAAAAAgACAgAAAAICAAIAAgICAgIDAwMD/AAAA/wD//wAAAP//AP8A//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMAAGYAAJkAAMwAAP8AMwAAMzMAM2YAM5kAM8wAM/8AZgAAZjMAZmYAZpkAZswAZv8AmQAAmTMAmWYAmZkAmcwAmf8AzAAAzDMAzGYAzJkAzMwAzP8A/wAA/zMA/2YA/5kA/8wA//8zAAAzADMzAGYzAJkzAMwzAP8zMwAzMzMzM2YzM5kzM8wzM/8zZgAzZjMzZmYzZpkzZswzZv8zmQAzmTMzmWYzmZkzmcwzmf8zzAAzzDMzzGYzzJkzzMwzzP8z/wAz/zMz/2Yz/5kz/8wz//9mAABmADNmAGZmAJlmAMxmAP9mMwBmMzNmM2ZmM5lmM8xmM/9mZgBmZjNmZmZmZplmZsxmZv9mmQBmmTNmmWZmmZlmmcxmmf9mzABmzDNmzGZmzJlmzMxmzP9m/wBm/zNm/2Zm/5lm/8xm//+ZAACZADOZAGaZAJmZAMyZAP+ZMwCZMzOZM2aZM5mZM8yZM/+ZZgCZZjOZZmaZZpmZZsyZZv+ZmQCZmTOZmWaZmZmZmcyZmf+ZzACZzDOZzGaZzJmZzMyZzP+Z/wCZ/zOZ/2aZ/5mZ/8yZ///MAADMADPMAGbMAJnMAMzMAP/MMwDMMzPMM2bMM5nMM8zMM//MZgDMZjPMZmbMZpnMZszMZv/MmQDMmTPMmWbMmZnMmczMmf/MzADMzDPMzGbMzJnMzMzMzP/M/wDM/zPM/2bM/5nM/8zM////AAD/ADP/AGb/AJn/AMz/AP//MwD/MzP/M2b/M5n/M8z/M///ZgD/ZjP/Zmb/Zpn/Zsz/Zv//mQD/mTP/mWb/mZn/mcz/mf//zAD/zDP/zGb/zJn/zMz/zP///wD//zP//2b//5n//8z///9EYrBQAAAB0ElEQVRIx71UPZrjIAz1cTjP7F1SjbjLppnsVVAawKWuIclFIFvgH5yQmClmIPpk8+UhPT3Jg/nmGn4bQC9ffgZA1AQQFZv/sTwWNJn1aAGU4/W3Ps6A6v0doIrwkNoz4AIEFqylPyvALEnuOCy5Ek2kRJT/zac7bg3hcpyCxjxm26l0zmOOOt7vvYAUNAhq0C8AC/bjEMDiGRnZiajmdD4ECIpjZOdRrxoTtJSmSiASIfaM7CVonPQ5wiYXGUOWGAnZMTIKylW+4PQJABYubYCSY2KsNjOrpCnnNmCKROyI2DGudpUwxfzMwRDlmImQibDwKKZBxy3CbgpEw+7uYl5Qgp7gBAAPgJsX5PZ2zCxJhv14sKCf7215DfIg3M1LlfuTRQ3DNh8fFuwWv+kFZdgIXFJSxvmul36Yq2rIQIrqGjXa22DWj8RZc3yT/2zD9oEADXp0v+MK8HeZhLe7KuunoLh2/StfAUAk9HAo65xyeF3/yi8AyHHtogMdyrKx2actHeoIvp8DlL7u0WEp0etJaOoAPryv/6MOp1v4BgdIKlufduhwVg1H9d/pABrEddVo5mBVQ0/+hcM93/s0XnTIeVTH2LsHcx9Ln/o+Hf4DfRhZNNOTbCgAAAAASUVORK5CYII=
@@ -6327,11 +6327,11 @@ panoramax.jar;https://github.com/JOSM/panoramax/releases/latest/download/panoram
 	Build-Jdk-Spec: 21
 	Author: 
 	Plugin-Class: org.openstreetmap.josm.plugins.panoramax.PanoramaxPlugin
-	Plugin-Date: 2026-01-09T21:21:27Z
+	Plugin-Date: 2026-02-07T23:41:26Z
 	Plugin-Description: Builds a Java Archive (JAR) file from the compiled project classes and resources.
-	Plugin-Mainversion: 
-	Plugin-Minimum-Java-Version: 
-	Plugin-Version: 2
+	Plugin-Mainversion: 19387
+	Plugin-Minimum-Java-Version: 21
+	Plugin-Version: 7
 mapwithai.jar;https://github.com/JOSM/MapWithAI/releases/latest/download/mapwithai.jar
 	Manifest-Version: 1.0
 	Ant-Version: Apache Ant 1.10.14
@@ -6544,7 +6544,7 @@ mapathoner.jar;https://mapathoner.mapathon.cz/mapathoner.jar
 	Build-Jdk-Spec: 17
 	Author: qeef
 	Plugin-Class: org.openstreetmap.josm.plugins.mapathoner.MapathonerPlugin
-	Plugin-Date: 2026-02-04T02:34:30Z
+	Plugin-Date: 2026-02-11T02:34:29Z
 	Plugin-Description: Some useful tools for HOT and Missing Maps mappers.
 	Plugin-Icon: data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCBmaWxsPSIjZmZmIiBoZWlnaHQ9IjEwMCUiIHdpZHRoPSIxMDAlIi8+PGcgc3Ryb2tlPSIjMDAwIj48cGF0aCBkPSJtNiAyNCAxOC0xOCAxMSAxMS0xOCAxOHoiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMy42Ii8+PHBhdGggZD0ibTM1IDE3czEwIDAgNSAxNWMwIC4yLTYgMTUgNSAxOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PGVsbGlwc2UgY3g9IjUyIiBjeT0iNTAiIGZpbGw9Im5vbmUiIHJ4PSI4IiByeT0iNSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0ibTUxIDQ1djEwIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEuNiIvPjxwYXRoIGQ9Im00NCA0OC43aDciIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMS42Ii8+PHBhdGggZD0ibTQ0IDUxLjNoNyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxLjYiLz48Y2lyY2xlIGN4PSI2IiBjeT0iMjQiIGZpbGw9IiNmZmYiIHI9IjIuNiIgc3Ryb2tlLXdpZHRoPSIyLjYiLz48Y2lyY2xlIGN4PSIyNCIgY3k9IjYiIGZpbGw9IiNmZmYiIHI9IjIuNiIgc3Ryb2tlLXdpZHRoPSIyLjYiLz48Y2lyY2xlIGN4PSIzNSIgY3k9IjE3IiBmaWxsPSIjZmZmIiByPSIyLjYiIHN0cm9rZS13aWR0aD0iMi42Ii8+PGNpcmNsZSBjeD0iMTciIGN5PSIzNSIgZmlsbD0iI2ZmZiIgcj0iMi42IiBzdHJva2Utd2lkdGg9IjIuNiIvPjwvZz48L3N2Zz4=
 	Plugin-Link: https://mapathoner.mapathon.cz/
@@ -7064,7 +7064,7 @@ urbaneye3d.jar;https://github.com/Zkir/UrbanEye3D/releases/latest/download/urban
 	Plugin-Link: https://github.com/Zkir/UrbanEye3D
 	Plugin-Mainversion: 19423
 	Plugin-Name: UrbanEye3D
-	Plugin-Version: 1.7.0
+	Plugin-Version: 1.8.0
 RovasConnector.jar;https://rovas.app/sites/default/files/josm_rovas_connector_releases/RovasConnector.jar
 	Manifest-Version: 1.0
 	Author: Florian Schäfer (floscher)

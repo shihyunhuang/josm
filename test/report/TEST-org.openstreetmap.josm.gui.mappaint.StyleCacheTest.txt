@@ -1,0 +1,10 @@
+Testcase: org.openstreetmap.josm.gui.mappaint.StyleCacheTest
+Test: testStyleCacheInternPool2() took 566 milli sec(s)
+Test: testStyleCacheInternPool() took 156 milli sec(s)
+Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 2 sec(s)
+layer' from null to 640 because of conflict with ⌃+F4
+2026-02-11 20:09:26.350 INFO: Silent shortcut conflict: 'system:deletelayer' moved by 'apple-reserved-15' to '⌃+⌥+F1'.
+------------- ---------------- ---------------
+------------- Standard Error ---------------
+2026-02-11 20:09:26.418 WARNING: Using fake clipboard.
+------------- ---------------- ---------------

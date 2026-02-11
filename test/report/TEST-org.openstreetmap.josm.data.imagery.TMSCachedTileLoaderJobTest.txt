@@ -1,5 +1,5 @@
 Testcase: org.openstreetmap.josm.data.imagery.TMSCachedTileLoaderJobTest
-Test: testLongExpire() took 0 milli sec(s) FAILED: Cannot invoke "org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskKeyStore.reset()" because "this.keyStore" is null
+Test: testLongExpire() took 1 milli sec(s) FAILED: Cannot invoke "org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskKeyStore.reset()" because "this.keyStore" is null
 java.lang.NullPointerException: Cannot invoke "org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskKeyStore.reset()" because "this.keyStore" is null
 	at org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskCache.reset(BlockDiskCache.java:620)
 	at org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskCache.processRemoveAll(BlockDiskCache.java:528)
@@ -26,7 +26,7 @@ java.lang.NullPointerException: Cannot invoke "org.apache.commons.jcs3.auxiliary
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-Test: testCdataPattern() took 1 milli sec(s) FAILED: Cannot invoke "org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskKeyStore.reset()" because "this.keyStore" is null
+Test: testCdataPattern() took 0 milli sec(s) FAILED: Cannot invoke "org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskKeyStore.reset()" because "this.keyStore" is null
 java.lang.NullPointerException: Cannot invoke "org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskKeyStore.reset()" because "this.keyStore" is null
 	at org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskCache.reset(BlockDiskCache.java:620)
 	at org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskCache.processRemoveAll(BlockDiskCache.java:528)
@@ -107,7 +107,7 @@ java.lang.NullPointerException: Cannot invoke "org.apache.commons.jcs3.auxiliary
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-Test: testNoCacheHeadersMinimumExpires() took 1 milli sec(s) FAILED: Cannot invoke "org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskKeyStore.reset()" because "this.keyStore" is null
+Test: testNoCacheHeadersMinimumExpires() took 0 milli sec(s) FAILED: Cannot invoke "org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskKeyStore.reset()" because "this.keyStore" is null
 java.lang.NullPointerException: Cannot invoke "org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskKeyStore.reset()" because "this.keyStore" is null
 	at org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskCache.reset(BlockDiskCache.java:620)
 	at org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskCache.processRemoveAll(BlockDiskCache.java:528)
@@ -188,7 +188,7 @@ java.lang.NullPointerException: Cannot invoke "org.apache.commons.jcs3.auxiliary
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-Test: testServiceExceptionPattern() took 0 milli sec(s) FAILED: Cannot invoke "org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskKeyStore.reset()" because "this.keyStore" is null
+Test: testServiceExceptionPattern() took 1 milli sec(s) FAILED: Cannot invoke "org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskKeyStore.reset()" because "this.keyStore" is null
 java.lang.NullPointerException: Cannot invoke "org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskKeyStore.reset()" because "this.keyStore" is null
 	at org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskCache.reset(BlockDiskCache.java:620)
 	at org.apache.commons.jcs3.auxiliary.disk.block.BlockDiskCache.processRemoveAll(BlockDiskCache.java:528)
@@ -215,4 +215,4 @@ java.lang.NullPointerException: Cannot invoke "org.apache.commons.jcs3.auxiliary
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-Tests run: 8, Failures: 8, Skipped: 0, Aborted: 0, Time elapsed: 258 milli sec(s)
+Tests run: 8, Failures: 8, Skipped: 0, Aborted: 0, Time elapsed: 248 milli sec(s)

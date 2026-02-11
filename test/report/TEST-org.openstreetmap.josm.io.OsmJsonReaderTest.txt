@@ -1,17 +1,17 @@
 Testcase: org.openstreetmap.josm.io.OsmJsonReaderTest
-Test: testException(Class, ThrowableInputStream, String)[1] took 5 milli sec(s)
-Test: testException(Class, ThrowableInputStream, String)[2] took 1 milli sec(s)
+Test: testException(Class, ThrowableInputStream, String)[1] took 4 milli sec(s)
+Test: testException(Class, ThrowableInputStream, String)[2] took 2 milli sec(s)
 Test: testException(Class, ThrowableInputStream, String)[3] took 1 milli sec(s)
 Test: testException(Class, ThrowableInputStream, String)[4] took 1 milli sec(s)
-Test: testEmptyRelation() took 0 milli sec(s)
-Test: testWay() took 2 milli sec(s)
-Test: testNodeMetaData() took 1 milli sec(s)
+Test: testEmptyRelation() took 6 milli sec(s)
+Test: testWay() took 3 milli sec(s)
+Test: testNodeMetaData() took 2 milli sec(s)
 Test: testRelation() took 1 milli sec(s)
 Test: testHeader() took 0 milli sec(s)
 Test: testRemark() took 0 milli sec(s)
-Test: testNodeTags() took 0 milli sec(s)
+Test: testNodeTags() took 1 milli sec(s)
 Test: testNodeSpatialData() took 0 milli sec(s)
-Tests run: 12, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 102 milli sec(s)
+Tests run: 12, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 120 milli sec(s)
 et(OsmJsonReader.java:212)
 	at org.openstreetmap.josm.io.OsmJsonReaderTest.lambda$testException$4(OsmJsonReaderTest.java:294)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
@@ -167,7 +167,7 @@ Caused by: java.net.SocketException: Read timed out
 		... 137 more
 	Caused by: [CIRCULAR REFERENCE: java.net.SocketException: Read timed out]
 
-2026-02-04 20:42:57.338 SEVERE: org.openstreetmap.josm.io.IllegalDataException: java.net.SocketException: Read timed out. Cause: java.net.SocketException: Read timed out
+2026-02-11 20:09:03.080 SEVERE: org.openstreetmap.josm.io.IllegalDataException: java.net.SocketException: Read timed out. Cause: java.net.SocketException: Read timed out
 org.openstreetmap.josm.io.IllegalDataException: java.net.SocketException: Read timed out
 	at org.openstreetmap.josm.io.OsmJsonReader.doParseDataSet(OsmJsonReader.java:195)
 	at org.openstreetmap.josm.io.OsmJsonReader.parseDataSet(OsmJsonReader.java:212)
@@ -325,7 +325,7 @@ Caused by: java.net.SocketException: Read timed out
 		... 137 more
 	Caused by: [CIRCULAR REFERENCE: java.net.SocketException: Read timed out]
 
-2026-02-04 20:42:57.339 SEVERE: jakarta.json.JsonException: Some random json exception
+2026-02-11 20:09:03.082 SEVERE: jakarta.json.JsonException: Some random json exception
 jakarta.json.JsonException: Some random json exception
 	at org.openstreetmap.josm.io.OsmJsonReaderTest.lambda$testException$1(OsmJsonReaderTest.java:269)
 	at org.openstreetmap.josm.io.OsmJsonReaderTest$ThrowableInputStream.read(OsmJsonReaderTest.java:317)
@@ -467,7 +467,7 @@ jakarta.json.JsonException: Some random json exception
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:42:57.339 SEVERE: jakarta.json.JsonException: Some random json exception
+2026-02-11 20:09:03.082 SEVERE: jakarta.json.JsonException: Some random json exception
 jakarta.json.JsonException: Some random json exception
 	at org.openstreetmap.josm.io.OsmJsonReaderTest.lambda$testException$1(OsmJsonReaderTest.java:269)
 	at org.openstreetmap.josm.io.OsmJsonReaderTest$ThrowableInputStream.read(OsmJsonReaderTest.java:317)
@@ -609,7 +609,7 @@ jakarta.json.JsonException: Some random json exception
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:42:57.339 SEVERE: org.openstreetmap.josm.io.IllegalDataException: jakarta.json.stream.JsonParsingException: Invalid token=COMMA at (line no=1, column no=8, offset=7). Expected tokens are: [COLON]. Cause: jakarta.json.stream.JsonParsingException: Invalid token=COMMA at (line no=1, column no=8, offset=7). Expected tokens are: [COLON]
+2026-02-11 20:09:03.083 SEVERE: org.openstreetmap.josm.io.IllegalDataException: jakarta.json.stream.JsonParsingException: Invalid token=COMMA at (line no=1, column no=8, offset=7). Expected tokens are: [COLON]. Cause: jakarta.json.stream.JsonParsingException: Invalid token=COMMA at (line no=1, column no=8, offset=7). Expected tokens are: [COLON]
 org.openstreetmap.josm.io.IllegalDataException: jakarta.json.stream.JsonParsingException: Invalid token=COMMA at (line no=1, column no=8, offset=7). Expected tokens are: [COLON]
 	at org.openstreetmap.josm.io.OsmJsonReader.doParseDataSet(OsmJsonReader.java:190)
 	at org.openstreetmap.josm.io.OsmJsonReader.parseDataSet(OsmJsonReader.java:212)
@@ -755,7 +755,7 @@ Caused by: jakarta.json.stream.JsonParsingException: Invalid token=COMMA at (lin
 	at org.openstreetmap.josm.io.OsmJsonReader.doParseDataSet(OsmJsonReader.java:185)
 	... 129 more
 
-2026-02-04 20:42:57.340 SEVERE: org.openstreetmap.josm.io.IllegalDataException: jakarta.json.stream.JsonParsingException: Invalid token=COMMA at (line no=1, column no=8, offset=7). Expected tokens are: [COLON]. Cause: jakarta.json.stream.JsonParsingException: Invalid token=COMMA at (line no=1, column no=8, offset=7). Expected tokens are: [COLON]
+2026-02-11 20:09:03.084 SEVERE: org.openstreetmap.josm.io.IllegalDataException: jakarta.json.stream.JsonParsingException: Invalid token=COMMA at (line no=1, column no=8, offset=7). Expected tokens are: [COLON]. Cause: jakarta.json.stream.JsonParsingException: Invalid token=COMMA at (line no=1, column no=8, offset=7). Expected tokens are: [COLON]
 org.openstreetmap.josm.io.IllegalDataException: jakarta.json.stream.JsonParsingException: Invalid token=COMMA at (line no=1, column no=8, offset=7). Expected tokens are: [COLON]
 	at org.openstreetmap.josm.io.OsmJsonReader.doParseDataSet(OsmJsonReader.java:190)
 	at org.openstreetmap.josm.io.OsmJsonReader.parseDataSet(OsmJsonReader.java:212)
@@ -901,7 +901,7 @@ Caused by: jakarta.json.stream.JsonParsingException: Invalid token=COMMA at (lin
 	at org.openstreetmap.josm.io.OsmJsonReader.doParseDataSet(OsmJsonReader.java:185)
 	... 129 more
 
-2026-02-04 20:42:57.340 SEVERE: org.openstreetmap.josm.io.IllegalDataException: java.io.IOException: stream is closed. Cause: java.io.IOException: stream is closed
+2026-02-11 20:09:03.085 SEVERE: org.openstreetmap.josm.io.IllegalDataException: java.io.IOException: stream is closed. Cause: java.io.IOException: stream is closed
 org.openstreetmap.josm.io.IllegalDataException: java.io.IOException: stream is closed
 	at org.openstreetmap.josm.io.OsmJsonReader.doParseDataSet(OsmJsonReader.java:195)
 	at org.openstreetmap.josm.io.OsmJsonReader.parseDataSet(OsmJsonReader.java:212)
@@ -1049,7 +1049,7 @@ Caused by: java.io.IOException: stream is closed
 		... 139 more
 	Caused by: [CIRCULAR REFERENCE: java.io.IOException: stream is closed]
 
-2026-02-04 20:42:57.340 SEVERE: org.openstreetmap.josm.io.IllegalDataException: java.io.IOException: stream is closed. Cause: java.io.IOException: stream is closed
+2026-02-11 20:09:03.085 SEVERE: org.openstreetmap.josm.io.IllegalDataException: java.io.IOException: stream is closed. Cause: java.io.IOException: stream is closed
 org.openstreetmap.josm.io.IllegalDataException: java.io.IOException: stream is closed
 	at org.openstreetmap.josm.io.OsmJsonReader.doParseDataSet(OsmJsonReader.java:195)
 	at org.openstreetmap.josm.io.OsmJsonReader.parseDataSet(OsmJsonReader.java:212)

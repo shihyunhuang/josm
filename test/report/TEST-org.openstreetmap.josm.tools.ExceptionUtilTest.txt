@@ -1,33 +1,33 @@
 Testcase: org.openstreetmap.josm.tools.ExceptionUtilTest
-Test: testExplainBadRequest(Supplier, Object)[1] took 1 milli sec(s)
+Test: testExplainBadRequest(Supplier, Object)[1] took 2 milli sec(s)
 Test: testExplainBadRequest(Supplier, Object)[2] took 0 milli sec(s)
 Test: testExplainBadRequest(Supplier, Object)[3] took 1 milli sec(s)
 Test: testExplainBadRequest(Supplier, Object)[4] took 0 milli sec(s)
-Test: testExplainBadRequest(Supplier, Object)[5] took 0 milli sec(s)
+Test: testExplainBadRequest(Supplier, Object)[5] took 1 milli sec(s)
 Test: testExplainBadRequest(Supplier, Object)[6] took 0 milli sec(s)
-Test: testExplainNotFound() took 0 milli sec(s)
-Test: testExplainFailedOAuthAuthentication() took 1 milli sec(s)
-Test: testExplainFailedOAuthAuthorisation() took 0 milli sec(s)
+Test: testExplainNotFound() took 1 milli sec(s)
+Test: testExplainFailedOAuthAuthentication() took 0 milli sec(s)
+Test: testExplainFailedOAuthAuthorisation() took 1 milli sec(s)
 Test: testExplainFailedBasicAuthentication() took 0 milli sec(s)
 Test: testExplainChangesetClosedException() took 1 milli sec(s)
 Test: testExplainOsmApiInitializationException() took 0 milli sec(s)
-Test: testExplainOsmTransferException() took 1 milli sec(s)
+Test: testExplainOsmTransferException() took 2 milli sec(s)
 Test: testExplainPreconditionFailed() took 1 milli sec(s)
 Test: testExplainClientTimeout() took 0 milli sec(s)
 Test: testExplainFailedAuthorisation() took 1 milli sec(s)
 Test: testExplainNestedIOException() took 0 milli sec(s)
 Test: testExplainNestedUnknownHostException() took 0 milli sec(s)
-Test: testExplainInternalServerError() took 1 milli sec(s)
-Test: testExplainException() took 0 milli sec(s)
-Test: testExplainConflict() took 3 milli sec(s)
-Test: testExplainNestedIllegalDataException() took 0 milli sec(s)
-Test: testExplainBandwidthLimitExceeded() took 1 milli sec(s)
-Test: testExplainGenericOsmApiException() took 1 milli sec(s)
+Test: testExplainInternalServerError() took 0 milli sec(s)
+Test: testExplainException() took 1 milli sec(s)
+Test: testExplainConflict() took 2 milli sec(s)
+Test: testExplainNestedIllegalDataException() took 1 milli sec(s)
+Test: testExplainBandwidthLimitExceeded() took 0 milli sec(s)
+Test: testExplainGenericOsmApiException() took 0 milli sec(s)
 Test: testExplainGoneForUnknownPrimitive() took 0 milli sec(s)
-Test: testExplainOfflineAccessException() took 0 milli sec(s)
+Test: testExplainOfflineAccessException() took 1 milli sec(s)
 Test: testExplainNestedSocketException() took 0 milli sec(s)
-Test: testExplainMissingOAuthAccessTokenException() took 1 milli sec(s)
-Tests run: 28, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 100 milli sec(s)
+Test: testExplainMissingOAuthAccessTokenException() took 0 milli sec(s)
+Tests run: 28, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 102 milli sec(s)
 cePipeline.java:293)
 	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
@@ -94,7 +94,7 @@ cePipeline.java:293)
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.823 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<header>
+2026-02-11 20:09:16.776 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<header>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<header>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainBadRequest(ExceptionUtilTest.java:59)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -178,7 +178,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<heade
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.823 WARNING: java.net.MalformedURLException: no protocol: invalid_url
+2026-02-11 20:09:16.776 WARNING: java.net.MalformedURLException: no protocol: invalid_url
 java.net.MalformedURLException: no protocol: invalid_url
 	at java.base/java.net.URL.<init>(URL.java:735)
 	at java.base/java.net.URL.<init>(URL.java:630)
@@ -310,7 +310,7 @@ java.net.MalformedURLException: no protocol: invalid_url
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.823 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<header>
+2026-02-11 20:09:16.777 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<header>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<header>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainBadRequest(ExceptionUtilTest.java:61)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -394,7 +394,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<heade
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.824 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<header>
+2026-02-11 20:09:16.777 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<header>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<header>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.lambda$testExplainBadRequest$4(ExceptionUtilTest.java:68)
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainBadRequest(ExceptionUtilTest.java:98)
@@ -522,7 +522,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<heade
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.824 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<The maximum bbox>
+2026-02-11 20:09:16.778 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<The maximum bbox>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<The maximum bbox>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainBadRequest(ExceptionUtilTest.java:66)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -606,7 +606,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<The m
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.825 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<You requested too many nodes>
+2026-02-11 20:09:16.778 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<You requested too many nodes>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<You requested too many nodes>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainBadRequest(ExceptionUtilTest.java:69)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -690,7 +690,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=400, Error Header=<You r
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.825 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.779 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainNotFound(ExceptionUtilTest.java:334)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -751,7 +751,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.825 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.779 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainFailedOAuthAuthentication(ExceptionUtilTest.java:221)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -812,7 +812,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.826 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.779 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainFailedOAuthAuthorisation(ExceptionUtilTest.java:196)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -873,7 +873,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.826 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=403
+2026-02-11 20:09:16.780 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=403
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=403
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainFailedOAuthAuthorisation(ExceptionUtilTest.java:200)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -934,7 +934,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=403
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.826 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.780 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainFailedBasicAuthentication(ExceptionUtilTest.java:211)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -995,8 +995,8 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.826 SEVERE: Unexpected format of error header for conflict in changeset update. Got ''
-2026-02-04 20:43:10.827 SEVERE: org.openstreetmap.josm.io.ChangesetClosedException: 
+2026-02-11 20:09:16.780 SEVERE: Unexpected format of error header for conflict in changeset update. Got ''
+2026-02-11 20:09:16.781 SEVERE: org.openstreetmap.josm.io.ChangesetClosedException: 
 org.openstreetmap.josm.io.ChangesetClosedException: 
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainChangesetClosedException(ExceptionUtilTest.java:118)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1057,7 +1057,7 @@ org.openstreetmap.josm.io.ChangesetClosedException:
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.827 SEVERE: org.openstreetmap.josm.io.ChangesetClosedException: 
+2026-02-11 20:09:16.781 SEVERE: org.openstreetmap.josm.io.ChangesetClosedException: 
 org.openstreetmap.josm.io.ChangesetClosedException: 
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainChangesetClosedException(ExceptionUtilTest.java:122)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1118,7 +1118,7 @@ org.openstreetmap.josm.io.ChangesetClosedException:
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.827 SEVERE: org.openstreetmap.josm.io.OsmApiInitializationException: 
+2026-02-11 20:09:16.781 SEVERE: org.openstreetmap.josm.io.OsmApiInitializationException: 
 org.openstreetmap.josm.io.OsmApiInitializationException: 
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOsmApiInitializationException(ExceptionUtilTest.java:357)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1179,7 +1179,7 @@ org.openstreetmap.josm.io.OsmApiInitializationException:
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.828 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0. Cause: java.net.SocketException: test
+2026-02-11 20:09:16.782 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0. Cause: java.net.SocketException: test
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOsmTransferException(ExceptionUtilTest.java:372)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1242,7 +1242,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 Caused by: java.net.SocketException: test
 	... 58 more
 
-2026-02-04 20:43:10.828 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0. Cause: java.net.UnknownHostException: test
+2026-02-11 20:09:16.782 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0. Cause: java.net.UnknownHostException: test
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOsmTransferException(ExceptionUtilTest.java:376)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1305,7 +1305,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 Caused by: java.net.UnknownHostException: test
 	... 58 more
 
-2026-02-04 20:43:10.828 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0. Cause: java.io.IOException: test
+2026-02-11 20:09:16.782 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0. Cause: java.io.IOException: test
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOsmTransferException(ExceptionUtilTest.java:381)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1368,7 +1368,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 Caused by: java.io.IOException: test
 	... 58 more
 
-2026-02-04 20:43:10.828 SEVERE: org.openstreetmap.josm.io.OsmApiInitializationException: 
+2026-02-11 20:09:16.782 SEVERE: org.openstreetmap.josm.io.OsmApiInitializationException: 
 org.openstreetmap.josm.io.OsmApiInitializationException: 
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOsmTransferException(ExceptionUtilTest.java:385)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1429,8 +1429,8 @@ org.openstreetmap.josm.io.OsmApiInitializationException:
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.828 SEVERE: Unexpected format of error header for conflict in changeset update. Got ''
-2026-02-04 20:43:10.828 SEVERE: org.openstreetmap.josm.io.ChangesetClosedException: 
+2026-02-11 20:09:16.782 SEVERE: Unexpected format of error header for conflict in changeset update. Got ''
+2026-02-11 20:09:16.782 SEVERE: org.openstreetmap.josm.io.ChangesetClosedException: 
 org.openstreetmap.josm.io.ChangesetClosedException: 
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOsmTransferException(ExceptionUtilTest.java:389)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1491,7 +1491,7 @@ org.openstreetmap.josm.io.ChangesetClosedException:
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.828 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412
+2026-02-11 20:09:16.782 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=412
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOsmTransferException(ExceptionUtilTest.java:392)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1552,7 +1552,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=412
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.828 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=500
+2026-02-11 20:09:16.782 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=500
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=500
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOsmTransferException(ExceptionUtilTest.java:402)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1613,7 +1613,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=500
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.829 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=400
+2026-02-11 20:09:16.782 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=400
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=400
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOsmTransferException(ExceptionUtilTest.java:406)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1674,7 +1674,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=400
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.829 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=509
+2026-02-11 20:09:16.783 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=509
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=509
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOsmTransferException(ExceptionUtilTest.java:409)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1735,7 +1735,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=509
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.829 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=509
+2026-02-11 20:09:16.783 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=509
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=509
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOsmTransferException(ExceptionUtilTest.java:409)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1796,7 +1796,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=509
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.829 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.783 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOsmTransferException(ExceptionUtilTest.java:414)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1857,7 +1857,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.829 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.783 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainPreconditionFailed(ExceptionUtilTest.java:424)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1918,7 +1918,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.829 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<test>
+2026-02-11 20:09:16.783 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<test>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<test>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainPreconditionFailed(ExceptionUtilTest.java:428)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -1979,7 +1979,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<test>
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.829 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Node 1 is still used by relation 1>
+2026-02-11 20:09:16.783 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Node 1 is still used by relation 1>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Node 1 is still used by relation 1>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainPreconditionFailed(ExceptionUtilTest.java:432)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2040,7 +2040,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Node 
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.830 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Node 1 is still used by way 1>
+2026-02-11 20:09:16.783 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Node 1 is still used by way 1>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Node 1 is still used by way 1>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainPreconditionFailed(ExceptionUtilTest.java:436)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2101,7 +2101,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Node 
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.830 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<The relation 1 is used in relation 2>
+2026-02-11 20:09:16.784 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<The relation 1 is used in relation 2>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<The relation 1 is used in relation 2>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainPreconditionFailed(ExceptionUtilTest.java:440)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2162,7 +2162,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<The r
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.830 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Way 1 is still used by relation 1>
+2026-02-11 20:09:16.784 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Way 1 is still used by relation 1>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Way 1 is still used by relation 1>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainPreconditionFailed(ExceptionUtilTest.java:444)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2223,7 +2223,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Way 1
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.830 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Way 1 requires the nodes with id in 1,2>
+2026-02-11 20:09:16.784 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Way 1 requires the nodes with id in 1,2>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Way 1 requires the nodes with id in 1,2>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainPreconditionFailed(ExceptionUtilTest.java:448)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2284,7 +2284,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=412, Error Header=<Way 1
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.830 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.784 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainClientTimeout(ExceptionUtilTest.java:130)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2345,7 +2345,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.830 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.784 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainFailedAuthorisation(ExceptionUtilTest.java:174)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2406,7 +2406,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.830 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Header=<header>
+2026-02-11 20:09:16.784 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Header=<header>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Header=<header>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainFailedAuthorisation(ExceptionUtilTest.java:177)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2467,7 +2467,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Header=<heade
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.831 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Header=<header>, Error Body=<body>
+2026-02-11 20:09:16.784 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Header=<header>, Error Body=<body>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Header=<header>, Error Body=<body>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainFailedAuthorisation(ExceptionUtilTest.java:180)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2528,7 +2528,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Header=<heade
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.831 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Header=<header_body>
+2026-02-11 20:09:16.784 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Header=<header_body>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Header=<header_body>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainFailedAuthorisation(ExceptionUtilTest.java:183)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2589,7 +2589,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Header=<heade
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.831 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Body=<body>
+2026-02-11 20:09:16.785 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Body=<body>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Body=<body>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainFailedAuthorisation(ExceptionUtilTest.java:186)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2650,7 +2650,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=403, Error Body=<body>
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.831 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.785 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainNestedIOException(ExceptionUtilTest.java:299)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2711,7 +2711,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.831 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0. Cause: java.io.IOException: test
+2026-02-11 20:09:16.785 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0. Cause: java.io.IOException: test
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainNestedIOException(ExceptionUtilTest.java:303)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2774,7 +2774,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 Caused by: java.io.IOException: test
 	... 58 more
 
-2026-02-04 20:43:10.831 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.785 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainNestedUnknownHostException(ExceptionUtilTest.java:323)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2835,7 +2835,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.832 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.785 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainInternalServerError(ExceptionUtilTest.java:264)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2896,7 +2896,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.832 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.786 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainException(ExceptionUtilTest.java:159)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -2957,7 +2957,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.832 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.786 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainException(ExceptionUtilTest.java:159)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3018,7 +3018,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.832 SEVERE: java.lang.Exception: 
+2026-02-11 20:09:16.786 SEVERE: java.lang.Exception: 
 java.lang.Exception: 
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainException(ExceptionUtilTest.java:161)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3079,7 +3079,7 @@ java.lang.Exception:
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.832 SEVERE: java.lang.Exception: 
+2026-02-11 20:09:16.786 SEVERE: java.lang.Exception: 
 java.lang.Exception: 
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainException(ExceptionUtilTest.java:161)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3140,7 +3140,7 @@ java.lang.Exception:
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.832 SEVERE: java.lang.Exception
+2026-02-11 20:09:16.786 SEVERE: java.lang.Exception
 java.lang.Exception
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainException(ExceptionUtilTest.java:163)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3201,7 +3201,7 @@ java.lang.Exception
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.832 SEVERE: java.lang.Exception
+2026-02-11 20:09:16.786 SEVERE: java.lang.Exception
 java.lang.Exception
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainException(ExceptionUtilTest.java:163)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3262,7 +3262,7 @@ java.lang.Exception
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.832 SEVERE: java.lang.Exception: test
+2026-02-11 20:09:16.786 SEVERE: java.lang.Exception: test
 java.lang.Exception: test
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainException(ExceptionUtilTest.java:165)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3323,7 +3323,7 @@ java.lang.Exception: test
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.832 SEVERE: java.lang.Exception: test
+2026-02-11 20:09:16.786 SEVERE: java.lang.Exception: test
 java.lang.Exception: test
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainException(ExceptionUtilTest.java:165)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3384,7 +3384,7 @@ java.lang.Exception: test
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.833 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.786 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainConflict(ExceptionUtilTest.java:140)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3445,7 +3445,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.833 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<header>
+2026-02-11 20:09:16.786 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<header>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<header>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainConflict(ExceptionUtilTest.java:142)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3506,7 +3506,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<heade
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.833 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<The changeset 1 was closed at xxx>
+2026-02-11 20:09:16.787 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<The changeset 1 was closed at xxx>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<The changeset 1 was closed at xxx>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainConflict(ExceptionUtilTest.java:144)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3567,8 +3567,8 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<The c
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.833 SEVERE: Failed to parse date 'xxx' replied by server.
-2026-02-04 20:43:10.833 SEVERE: org.openstreetmap.josm.tools.UncheckedParseException: The date string (xxx) could not be parsed.. Cause: java.time.format.DateTimeParseException: Text 'xxx' could not be parsed at index 0
+2026-02-11 20:09:16.787 SEVERE: Failed to parse date 'xxx' replied by server.
+2026-02-11 20:09:16.787 SEVERE: org.openstreetmap.josm.tools.UncheckedParseException: The date string (xxx) could not be parsed.. Cause: java.time.format.DateTimeParseException: Text 'xxx' could not be parsed at index 0
 org.openstreetmap.josm.tools.UncheckedParseException: The date string (xxx) could not be parsed.
 	at org.openstreetmap.josm.tools.date.DateUtils.parseInstant(DateUtils.java:160)
 	at org.openstreetmap.josm.tools.ExceptionUtil.explainConflict(ExceptionUtil.java:403)
@@ -3638,7 +3638,7 @@ Caused by: java.time.format.DateTimeParseException: Text 'xxx' could not be pars
 	at org.openstreetmap.josm.tools.date.DateUtils.parseInstant(DateUtils.java:158)
 	... 59 more
 
-2026-02-04 20:43:10.833 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<The changeset 1 was closed at 2016-01-01 12:34:56 UTC>
+2026-02-11 20:09:16.787 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<The changeset 1 was closed at 2016-01-01 12:34:56 UTC>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<The changeset 1 was closed at 2016-01-01 12:34:56 UTC>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainConflict(ExceptionUtilTest.java:146)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3699,7 +3699,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<The c
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 21:43:10.834 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<The changeset 1 was closed at 2016-01-01 12:34:56 UTC>
+2026-02-11 21:09:16.788 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<The changeset 1 was closed at 2016-01-01 12:34:56 UTC>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<The changeset 1 was closed at 2016-01-01 12:34:56 UTC>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainConflict(ExceptionUtilTest.java:150)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3760,7 +3760,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=409, Error Header=<The c
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.835 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.788 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainNestedIllegalDataException(ExceptionUtilTest.java:285)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3821,7 +3821,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.835 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0. Cause: org.openstreetmap.josm.io.IllegalDataException: test
+2026-02-11 20:09:16.789 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0. Cause: org.openstreetmap.josm.io.IllegalDataException: test
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainNestedIllegalDataException(ExceptionUtilTest.java:289)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3884,7 +3884,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 Caused by: org.openstreetmap.josm.io.IllegalDataException: test
 	... 58 more
 
-2026-02-04 20:43:10.836 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.789 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainBandwidthLimitExceeded(ExceptionUtilTest.java:107)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -3945,7 +3945,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.836 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.789 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainBandwidthLimitExceeded(ExceptionUtilTest.java:107)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -4006,7 +4006,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.836 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.789 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainGenericOsmApiException(ExceptionUtilTest.java:231)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -4067,7 +4067,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.836 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=500, Error Header=<header>
+2026-02-11 20:09:16.789 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=500, Error Header=<header>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=500, Error Header=<header>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainGenericOsmApiException(ExceptionUtilTest.java:236)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -4128,7 +4128,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=500, Error Header=<heade
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.836 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=500, Error Body=<body>
+2026-02-11 20:09:16.789 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=500, Error Body=<body>
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=500, Error Body=<body>
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainGenericOsmApiException(ExceptionUtilTest.java:241)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -4189,7 +4189,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=500, Error Body=<body>
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.837 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.789 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOfflineAccessException(ExceptionUtilTest.java:346)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -4250,7 +4250,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.837 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0. Cause: org.openstreetmap.josm.io.OfflineAccessException: test
+2026-02-11 20:09:16.790 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0. Cause: org.openstreetmap.josm.io.OfflineAccessException: test
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainOfflineAccessException(ExceptionUtilTest.java:348)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -4313,7 +4313,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 Caused by: org.openstreetmap.josm.io.OfflineAccessException: test
 	... 58 more
 
-2026-02-04 20:43:10.837 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
+2026-02-11 20:09:16.790 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainNestedSocketException(ExceptionUtilTest.java:313)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -4374,7 +4374,7 @@ org.openstreetmap.josm.io.OsmApiException: ResponseCode=0
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:43:10.837 SEVERE: org.openstreetmap.josm.io.MissingOAuthAccessTokenException
+2026-02-11 20:09:16.790 SEVERE: org.openstreetmap.josm.io.MissingOAuthAccessTokenException
 org.openstreetmap.josm.io.MissingOAuthAccessTokenException
 	at org.openstreetmap.josm.tools.ExceptionUtilTest.testExplainMissingOAuthAccessTokenException(ExceptionUtilTest.java:274)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)

@@ -1,18 +1,18 @@
 Testcase: org.openstreetmap.josm.gui.download.PlaceSelectionTest
-Test: testTicket23117(Class, Supplier, WireMockRuntimeInfo)[1] took 455 milli sec(s)
-Test: testTicket23117(Class, Supplier, WireMockRuntimeInfo)[2] took 369 milli sec(s)
-Test: testTicket23117(Class, Supplier, WireMockRuntimeInfo)[3] took 398 milli sec(s)
+Test: testTicket23117(Class, Supplier, WireMockRuntimeInfo)[1] took 442 milli sec(s)
+Test: testTicket23117(Class, Supplier, WireMockRuntimeInfo)[2] took 358 milli sec(s)
+Test: testTicket23117(Class, Supplier, WireMockRuntimeInfo)[3] took 380 milli sec(s)
 Test: testBookmarkSelection() took 2 milli sec(s)
 Tests run: 4, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 1 sec(s)
-mewhere%2C+Podunk -> HTTP/1.1 200 (0 ms)
-2026-02-04 20:42:13.558 INFO: GET http://localhost:58820/Somewhere%2C+Podunk -> HTTP/1.1 200 (1 ms)
-2026-02-04 20:42:13.826 INFO: GET http://localhost:58820/Somewhere%2C+Podunk -> HTTP/1.1 200 (0 ms)
-2026-02-04 20:42:13.932 INFO: GET http://localhost:58820/Somewhere%2C+Podunk -> HTTP/1.1 200 (1 ms)
+mewhere%2C+Podunk -> HTTP/1.1 200 (1 ms)
+2026-02-11 20:44:17.841 INFO: GET http://localhost:58338/Somewhere%2C+Podunk -> HTTP/1.1 200 (0 ms)
+2026-02-11 20:44:18.099 INFO: GET http://localhost:58338/Somewhere%2C+Podunk -> HTTP/1.1 200 (0 ms)
+2026-02-11 20:44:18.205 INFO: GET http://localhost:58338/Somewhere%2C+Podunk -> HTTP/1.1 200 (1 ms)
 ------------- ---------------- ---------------
 ------------- Standard Error ---------------
-2026-02-04 20:42:13.091 WARNING: Error occurred with query 'http://localhost:58820/Somewhere%2C+Podunk': '': org.xml.sax.SAXParseException: 
-2026-02-04 20:42:13.092 WARNING: Bad response - Name server returned invalid data. Please try again.
-2026-02-04 20:42:13.093 SEVERE: org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0;. Cause: org.xml.sax.SAXParseException: 
+2026-02-11 20:44:17.385 WARNING: Error occurred with query 'http://localhost:58338/Somewhere%2C+Podunk': '': org.xml.sax.SAXParseException: 
+2026-02-11 20:44:17.387 WARNING: Bad response - Name server returned invalid data. Please try again.
+2026-02-11 20:44:17.387 SEVERE: org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0;. Cause: org.xml.sax.SAXParseException: 
 org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0; 
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.generateLastException(PlaceSelection.java:315)
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:301)
@@ -37,7 +37,7 @@ Caused by: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; c
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:289)
 	... 7 more
 
-2026-02-04 20:42:13.094 SEVERE: Handled by bug report queue: org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0;. Cause: org.xml.sax.SAXParseException: 
+2026-02-11 20:44:17.388 SEVERE: Handled by bug report queue: org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0;. Cause: org.xml.sax.SAXParseException: 
 org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0; 
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.generateLastException(PlaceSelection.java:315)
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:301)
@@ -62,7 +62,7 @@ Caused by: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; c
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:289)
 	... 7 more
 
-ReportedException [thread=Thread[#2450,AWT-EventQueue-0,6,main], exception=org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0; , methodWarningFrom=BugReportExceptionHandler#handleException]
+ReportedException [thread=Thread[#2465,AWT-EventQueue-0,6,main], exception=org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0; , methodWarningFrom=BugReportExceptionHandler#handleException]
 	at org.openstreetmap.josm.tools.bugreport.BugReport.intercept(BugReport.java:222)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
@@ -108,9 +108,9 @@ Caused by: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; c
 	at org.openstreetmap.josm.io.NameFinder.parseSearchResults(NameFinder.java)
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:289)
 	... 7 more
-2026-02-04 20:42:13.195 WARNING: Error occurred with query 'http://localhost:58820/Somewhere%2C+Podunk': '': org.xml.sax.SAXParseException: 
-2026-02-04 20:42:13.196 WARNING: Bad response - Name server returned invalid data. Please try again.
-2026-02-04 20:42:13.196 SEVERE: org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0;. Cause: org.xml.sax.SAXParseException: 
+2026-02-11 20:44:17.489 WARNING: Error occurred with query 'http://localhost:58338/Somewhere%2C+Podunk': '': org.xml.sax.SAXParseException: 
+2026-02-11 20:44:17.491 WARNING: Bad response - Name server returned invalid data. Please try again.
+2026-02-11 20:44:17.491 SEVERE: org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0;. Cause: org.xml.sax.SAXParseException: 
 org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0; 
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.generateLastException(PlaceSelection.java:315)
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:301)
@@ -135,7 +135,7 @@ Caused by: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; c
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:289)
 	... 7 more
 
-2026-02-04 20:42:13.197 SEVERE: Handled by bug report queue: org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0;. Cause: org.xml.sax.SAXParseException: 
+2026-02-11 20:44:17.491 SEVERE: Handled by bug report queue: org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0;. Cause: org.xml.sax.SAXParseException: 
 org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0; 
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.generateLastException(PlaceSelection.java:315)
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:301)
@@ -160,7 +160,7 @@ Caused by: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; c
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:289)
 	... 7 more
 
-ReportedException [thread=Thread[#2450,AWT-EventQueue-0,6,main], exception=org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0; , methodWarningFrom=BugReportExceptionHandler#handleException]
+ReportedException [thread=Thread[#2465,AWT-EventQueue-0,6,main], exception=org.openstreetmap.josm.io.OsmTransferException: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; columnNumber: 0; , methodWarningFrom=BugReportExceptionHandler#handleException]
 	at org.openstreetmap.josm.tools.bugreport.BugReport.intercept(BugReport.java:222)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
@@ -206,7 +206,7 @@ Caused by: org.xml.sax.SAXParseExceptionpublicId: ; systemId: ; lineNumber: 0; c
 	at org.openstreetmap.josm.io.NameFinder.parseSearchResults(NameFinder.java)
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:289)
 	... 7 more
-2026-02-04 20:42:13.456 SEVERE: org.openstreetmap.josm.io.OsmTransferException: java.io.IOException. Cause: java.io.IOException
+2026-02-11 20:44:17.740 SEVERE: org.openstreetmap.josm.io.OsmTransferException: java.io.IOException. Cause: java.io.IOException
 org.openstreetmap.josm.io.OsmTransferException: java.io.IOException
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.generateLastException(PlaceSelection.java:315)
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:304)
@@ -230,8 +230,8 @@ Caused by: java.io.IOException
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:289)
 	... 7 more
 
-2026-02-04 20:42:13.457 SEVERE: IO Exception - <html>Failed to upload data to or download data from<br>'http://localhost:58820/Somewhere%2C+Podunk'<br>due to a problem with transferring data.<br>Details (untranslated): null</html>
-2026-02-04 20:42:13.558 SEVERE: org.openstreetmap.josm.io.OsmTransferException: java.io.IOException. Cause: java.io.IOException
+2026-02-11 20:44:17.741 SEVERE: IO Exception - <html>Failed to upload data to or download data from<br>'http://localhost:58338/Somewhere%2C+Podunk'<br>due to a problem with transferring data.<br>Details (untranslated): null</html>
+2026-02-11 20:44:17.842 SEVERE: org.openstreetmap.josm.io.OsmTransferException: java.io.IOException. Cause: java.io.IOException
 org.openstreetmap.josm.io.OsmTransferException: java.io.IOException
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.generateLastException(PlaceSelection.java:315)
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:304)
@@ -255,8 +255,8 @@ Caused by: java.io.IOException
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:289)
 	... 7 more
 
-2026-02-04 20:42:13.560 SEVERE: IO Exception - <html>Failed to upload data to or download data from<br>'http://localhost:58820/Somewhere%2C+Podunk'<br>due to a problem with transferring data.<br>Details (untranslated): null</html>
-2026-02-04 20:42:13.826 SEVERE: org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException. Cause: javax.xml.parsers.ParserConfigurationException
+2026-02-11 20:44:17.843 SEVERE: IO Exception - <html>Failed to upload data to or download data from<br>'http://localhost:58338/Somewhere%2C+Podunk'<br>due to a problem with transferring data.<br>Details (untranslated): null</html>
+2026-02-11 20:44:18.099 SEVERE: org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException. Cause: javax.xml.parsers.ParserConfigurationException
 org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.generateLastException(PlaceSelection.java:315)
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:304)
@@ -280,7 +280,7 @@ Caused by: javax.xml.parsers.ParserConfigurationException
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:289)
 	... 7 more
 
-2026-02-04 20:42:13.827 SEVERE: Handled by bug report queue: org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException. Cause: javax.xml.parsers.ParserConfigurationException
+2026-02-11 20:44:18.100 SEVERE: Handled by bug report queue: org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException. Cause: javax.xml.parsers.ParserConfigurationException
 org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.generateLastException(PlaceSelection.java:315)
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:304)
@@ -304,7 +304,7 @@ Caused by: javax.xml.parsers.ParserConfigurationException
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:289)
 	... 7 more
 
-ReportedException [thread=Thread[#2450,AWT-EventQueue-0,6,main], exception=org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException, methodWarningFrom=BugReportExceptionHandler#handleException]
+ReportedException [thread=Thread[#2465,AWT-EventQueue-0,6,main], exception=org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException, methodWarningFrom=BugReportExceptionHandler#handleException]
 	at org.openstreetmap.josm.tools.bugreport.BugReport.intercept(BugReport.java:222)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
@@ -349,7 +349,7 @@ Caused by: javax.xml.parsers.ParserConfigurationException
 	at org.openstreetmap.josm.io.NameFinder.parseSearchResults(NameFinder.java)
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:289)
 	... 7 more
-2026-02-04 20:42:13.932 SEVERE: org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException. Cause: javax.xml.parsers.ParserConfigurationException
+2026-02-11 20:44:18.205 SEVERE: org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException. Cause: javax.xml.parsers.ParserConfigurationException
 org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.generateLastException(PlaceSelection.java:315)
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:304)
@@ -373,7 +373,7 @@ Caused by: javax.xml.parsers.ParserConfigurationException
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:289)
 	... 7 more
 
-2026-02-04 20:42:13.933 SEVERE: Handled by bug report queue: org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException. Cause: javax.xml.parsers.ParserConfigurationException
+2026-02-11 20:44:18.206 SEVERE: Handled by bug report queue: org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException. Cause: javax.xml.parsers.ParserConfigurationException
 org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.generateLastException(PlaceSelection.java:315)
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:304)
@@ -397,7 +397,7 @@ Caused by: javax.xml.parsers.ParserConfigurationException
 	at org.openstreetmap.josm.gui.download.PlaceSelection$NameQueryTask.realRun(PlaceSelection.java:289)
 	... 7 more
 
-ReportedException [thread=Thread[#2450,AWT-EventQueue-0,6,main], exception=org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException, methodWarningFrom=BugReportExceptionHandler#handleException]
+ReportedException [thread=Thread[#2465,AWT-EventQueue-0,6,main], exception=org.openstreetmap.josm.io.OsmTransferException: javax.xml.parsers.ParserConfigurationException, methodWarningFrom=BugReportExceptionHandler#handleException]
 	at org.openstreetmap.josm.tools.bugreport.BugReport.intercept(BugReport.java:222)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)

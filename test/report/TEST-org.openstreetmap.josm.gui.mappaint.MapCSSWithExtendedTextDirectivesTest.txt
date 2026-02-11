@@ -2,4 +2,4 @@ Testcase: org.openstreetmap.josm.gui.mappaint.MapCSSWithExtendedTextDirectivesTe
 Test: testCreateTextElementComposingTextFromTag() took 0 milli sec(s)
 Test: testCreateNullStrategy() took 0 milli sec(s)
 Test: testCreateAutoTextElement() took 0 milli sec(s)
-Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 90 milli sec(s)
+Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 70 milli sec(s)

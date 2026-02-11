@@ -1,12 +1,12 @@
 Testcase: org.openstreetmap.josm.data.imagery.vectortile.mapbox.style.MapboxVectorStyleTest
 Test: testVersionChecks() took 2 milli sec(s)
-Test: testEqualsContract() took 4 milli sec(s)
-Test: testMapillaryStyle() took 109 milli sec(s)
-Test: testSavedFiles() took 104 milli sec(s)
-Test: testSources() took 1 milli sec(s)
-Test: testSprites() took 226 milli sec(s)
-Tests run: 6, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 489 milli sec(s)
-30lvtfr0000gn/T/junit-13397937459304930219/sprite@2x.json
+Test: testEqualsContract() took 5 milli sec(s)
+Test: testMapillaryStyle() took 110 milli sec(s)
+Test: testSavedFiles() took 106 milli sec(s)
+Test: testSources() took 2 milli sec(s)
+Test: testSprites() took 231 milli sec(s)
+Tests run: 6, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 496 milli sec(s)
+0lvtfr0000gn/T/junit-2954880419617864928/sprite@2x.json
 	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
 	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
 	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)

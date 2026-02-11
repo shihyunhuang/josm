@@ -1,8 +1,8 @@
 Testcase: org.openstreetmap.josm.gui.tagging.presets.items.ComboTest
-Test: testUseLastAsDefault() took 172 milli sec(s)
-Test: testColor() took 128 milli sec(s)
-Test: testAddToPanel() took 146 milli sec(s)
-Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 524 milli sec(s)
+Test: testUseLastAsDefault() took 178 milli sec(s)
+Test: testColor() took 114 milli sec(s)
+Test: testAddToPanel() took 106 milli sec(s)
+Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 480 milli sec(s)
 cause of conflict with ⌥+M
-2026-02-04 20:42:51.853 INFORMATION: Tastenkürzelkonflikt: 'menu:Modus' wurde von 'menu:Mode' auf '⌃+⌥+F2' verschoben.
+2026-02-11 20:08:57.553 INFORMATION: Tastenkürzelkonflikt: 'menu:Modus' wurde von 'menu:Mode' auf '⌃+⌥+F2' verschoben.
 ------------- ---------------- ---------------

@@ -1,45 +1,45 @@
 Testcase: org.openstreetmap.josm.data.oauth.OAuth20AuthorizationTest
-Test: testAuthorizeBadState() took 312 milli sec(s)
+Test: testAuthorizeBadState() took 326 milli sec(s)
 Test: testSocketTimeout() took 1 sec(s)
 Test: testAuthorize() took 386 milli sec(s)
 Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 2 sec(s)
 -> !!! (0 ms)
-2026-02-04 20:41:10.412 INFO: RemoteControl::Accepting remote connections on /127.0.0.1:8111
-2026-02-04 20:41:10.412 INFO: RemoteControl::Accepting remote connections on /0:0:0:0:0:0:0:1:8111
-2026-02-04 20:41:10.415 INFO: Opening URL: http://localhost:58791/oauth2/authorize?response_type=code&client_id=edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&redirect_uri=http://127.0.0.1:8111/oauth_authorization&scope=read_gpx&state=b99ead6b-bf1a-426b-97a9-a46f181b1fe2&code_challenge_method=S256&code_challenge=FN1pqyVqDtyuOA7sZsvXGUU1_5_NW610eXjF83VdWzE
-2026-02-04 20:41:10.419 INFO: GET http://localhost:58791/oauth2/authorize?response_type=code&client_id=edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&redirect_uri=http://127.0.0.1:8111/oauth_authorization&scope=read_gpx&state=b99ead6b-bf1a-426b-97a9-a46f181b1fe2&code_challenge_method=S256&code_challenge=FN1pqyVqDtyuOA7sZsvXGUU1_5_NW610eXjF83VdWzE -> HTTP/1.1 307 (4 ms)
-2026-02-04 20:41:10.419 INFO: Download redirected to http://127.0.0.1:8111/oauth_authorization?state=Bad_State&code=test_code
-2026-02-04 20:41:10.425 INFO: RemoteControl received: GET /oauth_authorization?state=Bad_State&code=test_code HTTP/1.1
-2026-02-04 20:41:10.429 INFO: GET http://127.0.0.1:8111/oauth_authorization?state=Bad_State&code=test_code -> HTTP/1.1 400 (10 ms)
-2026-02-04 20:41:10.535 INFO: RemoteControl::Server /127.0.0.1:8111 stopped.
-2026-02-04 20:41:10.535 INFO: RemoteControl::Server /0:0:0:0:0:0:0:1:8111 stopped.
-2026-02-04 20:41:10.589 INFO: GET http://localhost/.well-known/oauth-authorization-server -> !!! (0 ms)
-2026-02-04 20:41:10.695 INFO: RemoteControl::Accepting remote connections on /127.0.0.1:8111
-2026-02-04 20:41:10.695 INFO: RemoteControl::Accepting remote connections on /0:0:0:0:0:0:0:1:8111
-2026-02-04 20:41:10.695 INFO: Opening URL: http://localhost:58791/oauth2/authorize?response_type=code&client_id=edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&redirect_uri=http://127.0.0.1:8111/oauth_authorization&scope=read_gpx&state=c136df04-aeac-4b48-9403-8b9a38ed1d08&code_challenge_method=S256&code_challenge=hO9e6AwSCOlhytdkqJqT_M5bcBHIvvgP-gCwzysmLoA
-2026-02-04 20:41:10.697 INFO: GET http://localhost:58791/oauth2/authorize?response_type=code&client_id=edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&redirect_uri=http://127.0.0.1:8111/oauth_authorization&scope=read_gpx&state=c136df04-aeac-4b48-9403-8b9a38ed1d08&code_challenge_method=S256&code_challenge=hO9e6AwSCOlhytdkqJqT_M5bcBHIvvgP-gCwzysmLoA -> HTTP/1.1 307 (1 ms)
-2026-02-04 20:41:10.697 INFO: Download redirected to http://127.0.0.1:8111/oauth_authorization?state=c136df04-aeac-4b48-9403-8b9a38ed1d08&code=test_code
-2026-02-04 20:41:10.697 INFO: RemoteControl received: GET /oauth_authorization?state=c136df04-aeac-4b48-9403-8b9a38ed1d08&code=test_code HTTP/1.1
-2026-02-04 20:41:10.697 INFO: POST http://localhost:58791/oauth2/token (204 B) ...
-2026-02-04 20:41:11.699 INFO: POST http://localhost:58791/oauth2/token -> !!! (1.0 s)
-2026-02-04 20:41:11.805 INFO: GET http://127.0.0.1:8111/oauth_authorization?state=c136df04-aeac-4b48-9403-8b9a38ed1d08&code=test_code -> HTTP/1.1 500 (1.1 s)
-2026-02-04 20:41:11.907 INFO: RemoteControl::Server /127.0.0.1:8111 stopped.
-2026-02-04 20:41:11.907 INFO: RemoteControl::Server /0:0:0:0:0:0:0:1:8111 stopped.
-2026-02-04 20:41:11.968 INFO: GET http://localhost/.well-known/oauth-authorization-server -> !!! (0 ms)
-2026-02-04 20:41:12.074 INFO: RemoteControl::Accepting remote connections on /127.0.0.1:8111
-2026-02-04 20:41:12.074 INFO: RemoteControl::Accepting remote connections on /0:0:0:0:0:0:0:1:8111
-2026-02-04 20:41:12.074 INFO: Opening URL: http://localhost:58791/oauth2/authorize?response_type=code&client_id=edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&redirect_uri=http://127.0.0.1:8111/oauth_authorization&scope=read_gpx&state=6ef25273-b038-4083-9838-96101928ad51&code_challenge_method=S256&code_challenge=BGB-6Dw_S7aV1YaHBi4J183TpmBZ7RpGeuQT151DhBE
-2026-02-04 20:41:12.076 INFO: GET http://localhost:58791/oauth2/authorize?response_type=code&client_id=edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&redirect_uri=http://127.0.0.1:8111/oauth_authorization&scope=read_gpx&state=6ef25273-b038-4083-9838-96101928ad51&code_challenge_method=S256&code_challenge=BGB-6Dw_S7aV1YaHBi4J183TpmBZ7RpGeuQT151DhBE -> HTTP/1.1 307 (1 ms)
-2026-02-04 20:41:12.076 INFO: Download redirected to http://127.0.0.1:8111/oauth_authorization?state=6ef25273-b038-4083-9838-96101928ad51&code=test_code
-2026-02-04 20:41:12.076 INFO: RemoteControl received: GET /oauth_authorization?state=6ef25273-b038-4083-9838-96101928ad51&code=test_code HTTP/1.1
-2026-02-04 20:41:12.076 INFO: POST http://localhost:58791/oauth2/token (204 B) ...
-2026-02-04 20:41:12.078 INFO: POST http://localhost:58791/oauth2/token -> HTTP/1.1 200 (1 ms)
-2026-02-04 20:41:12.185 INFO: GET http://127.0.0.1:8111/oauth_authorization?state=6ef25273-b038-4083-9838-96101928ad51&code=test_code -> HTTP/1.1 200 (109 ms; 4 B)
-2026-02-04 20:41:12.290 INFO: RemoteControl::Server /127.0.0.1:8111 stopped.
-2026-02-04 20:41:12.291 INFO: RemoteControl::Server /0:0:0:0:0:0:0:1:8111 stopped.
+2026-02-11 20:43:10.484 INFO: RemoteControl::Accepting remote connections on /127.0.0.1:8111
+2026-02-11 20:43:10.484 INFO: RemoteControl::Accepting remote connections on /0:0:0:0:0:0:0:1:8111
+2026-02-11 20:43:10.486 INFO: Opening URL: http://localhost:58301/oauth2/authorize?response_type=code&client_id=edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&redirect_uri=http://127.0.0.1:8111/oauth_authorization&scope=read_gpx&state=a9328b49-08a4-44ab-901c-0e43d23cf747&code_challenge_method=S256&code_challenge=VrcWaD2DGAbzCG-vAO9-F0heGlQ7ZZ4Vxz4fFwHLja4
+2026-02-11 20:43:10.491 INFO: GET http://localhost:58301/oauth2/authorize?response_type=code&client_id=edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&redirect_uri=http://127.0.0.1:8111/oauth_authorization&scope=read_gpx&state=a9328b49-08a4-44ab-901c-0e43d23cf747&code_challenge_method=S256&code_challenge=VrcWaD2DGAbzCG-vAO9-F0heGlQ7ZZ4Vxz4fFwHLja4 -> HTTP/1.1 307 (4 ms)
+2026-02-11 20:43:10.491 INFO: Download redirected to http://127.0.0.1:8111/oauth_authorization?state=Bad_State&code=test_code
+2026-02-11 20:43:10.498 INFO: RemoteControl received: GET /oauth_authorization?state=Bad_State&code=test_code HTTP/1.1
+2026-02-11 20:43:10.503 INFO: GET http://127.0.0.1:8111/oauth_authorization?state=Bad_State&code=test_code -> HTTP/1.1 400 (11 ms)
+2026-02-11 20:43:10.608 INFO: RemoteControl::Server /127.0.0.1:8111 stopped.
+2026-02-11 20:43:10.609 INFO: RemoteControl::Server /0:0:0:0:0:0:0:1:8111 stopped.
+2026-02-11 20:43:10.671 INFO: GET http://localhost/.well-known/oauth-authorization-server -> !!! (0 ms)
+2026-02-11 20:43:10.774 INFO: RemoteControl::Accepting remote connections on /127.0.0.1:8111
+2026-02-11 20:43:10.774 INFO: RemoteControl::Accepting remote connections on /0:0:0:0:0:0:0:1:8111
+2026-02-11 20:43:10.774 INFO: Opening URL: http://localhost:58301/oauth2/authorize?response_type=code&client_id=edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&redirect_uri=http://127.0.0.1:8111/oauth_authorization&scope=read_gpx&state=ea844ce3-a035-40c5-b556-21b5d44effa4&code_challenge_method=S256&code_challenge=mx0FxAuAH84F9Vxl4z5w7-SvILKewadiwuO4WmxDIPc
+2026-02-11 20:43:10.776 INFO: GET http://localhost:58301/oauth2/authorize?response_type=code&client_id=edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&redirect_uri=http://127.0.0.1:8111/oauth_authorization&scope=read_gpx&state=ea844ce3-a035-40c5-b556-21b5d44effa4&code_challenge_method=S256&code_challenge=mx0FxAuAH84F9Vxl4z5w7-SvILKewadiwuO4WmxDIPc -> HTTP/1.1 307 (1 ms)
+2026-02-11 20:43:10.776 INFO: Download redirected to http://127.0.0.1:8111/oauth_authorization?state=ea844ce3-a035-40c5-b556-21b5d44effa4&code=test_code
+2026-02-11 20:43:10.777 INFO: RemoteControl received: GET /oauth_authorization?state=ea844ce3-a035-40c5-b556-21b5d44effa4&code=test_code HTTP/1.1
+2026-02-11 20:43:10.777 INFO: POST http://localhost:58301/oauth2/token (204 B) ...
+2026-02-11 20:43:11.779 INFO: POST http://localhost:58301/oauth2/token -> !!! (1.0 s)
+2026-02-11 20:43:11.885 INFO: GET http://127.0.0.1:8111/oauth_authorization?state=ea844ce3-a035-40c5-b556-21b5d44effa4&code=test_code -> HTTP/1.1 500 (1.1 s)
+2026-02-11 20:43:11.990 INFO: RemoteControl::Server /127.0.0.1:8111 stopped.
+2026-02-11 20:43:11.990 INFO: RemoteControl::Server /0:0:0:0:0:0:0:1:8111 stopped.
+2026-02-11 20:43:12.060 INFO: GET http://localhost/.well-known/oauth-authorization-server -> !!! (0 ms)
+2026-02-11 20:43:12.166 INFO: RemoteControl::Accepting remote connections on /127.0.0.1:8111
+2026-02-11 20:43:12.166 INFO: RemoteControl::Accepting remote connections on /0:0:0:0:0:0:0:1:8111
+2026-02-11 20:43:12.166 INFO: Opening URL: http://localhost:58301/oauth2/authorize?response_type=code&client_id=edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&redirect_uri=http://127.0.0.1:8111/oauth_authorization&scope=read_gpx&state=e19688af-7e00-454a-8789-01e87761809d&code_challenge_method=S256&code_challenge=a7RreuaWEpjeCQ1OHe3j2F5Zf6bxWwcT6_ek0vc3UiE
+2026-02-11 20:43:12.168 INFO: GET http://localhost:58301/oauth2/authorize?response_type=code&client_id=edPII614Lm0_0zEpc_QzEltA9BUll93-Y-ugRQUoHMI&redirect_uri=http://127.0.0.1:8111/oauth_authorization&scope=read_gpx&state=e19688af-7e00-454a-8789-01e87761809d&code_challenge_method=S256&code_challenge=a7RreuaWEpjeCQ1OHe3j2F5Zf6bxWwcT6_ek0vc3UiE -> HTTP/1.1 307 (1 ms)
+2026-02-11 20:43:12.168 INFO: Download redirected to http://127.0.0.1:8111/oauth_authorization?state=e19688af-7e00-454a-8789-01e87761809d&code=test_code
+2026-02-11 20:43:12.168 INFO: RemoteControl received: GET /oauth_authorization?state=e19688af-7e00-454a-8789-01e87761809d&code=test_code HTTP/1.1
+2026-02-11 20:43:12.168 INFO: POST http://localhost:58301/oauth2/token (204 B) ...
+2026-02-11 20:43:12.170 INFO: POST http://localhost:58301/oauth2/token -> HTTP/1.1 200 (1 ms)
+2026-02-11 20:43:12.276 INFO: GET http://127.0.0.1:8111/oauth_authorization?state=e19688af-7e00-454a-8789-01e87761809d&code=test_code -> HTTP/1.1 200 (108 ms; 4 B)
+2026-02-11 20:43:12.381 INFO: RemoteControl::Server /127.0.0.1:8111 stopped.
+2026-02-11 20:43:12.382 INFO: RemoteControl::Server /0:0:0:0:0:0:0:1:8111 stopped.
 ------------- ---------------- ---------------
 ------------- Standard Error ---------------
-2026-02-04 20:41:10.309 WARNING: java.net.ConnectException: Connection refused
+2026-02-11 20:43:10.378 WARNING: java.net.ConnectException: Connection refused
 java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639)
@@ -124,7 +124,7 @@ java.net.ConnectException: Connection refused
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:41:10.589 WARNING: java.net.ConnectException: Connection refused
+2026-02-11 20:43:10.671 WARNING: java.net.ConnectException: Connection refused
 java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639)
@@ -209,8 +209,8 @@ java.net.ConnectException: Connection refused
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:41:10.589 WARNING: Already here java.net.ConnectException: Connection refused
-2026-02-04 20:41:11.699 WARNING: java.net.SocketTimeoutException: Read timed out. Cause: java.net.SocketTimeoutException: Read timed out
+2026-02-11 20:43:10.671 WARNING: Already here java.net.ConnectException: Connection refused
+2026-02-11 20:43:11.779 WARNING: java.net.SocketTimeoutException: Read timed out. Cause: java.net.SocketTimeoutException: Read timed out
 java.net.SocketTimeoutException: Read timed out
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)

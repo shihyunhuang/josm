@@ -1,0 +1,12 @@
+Testcase: org.openstreetmap.josm.gui.layer.LayerStateFSMTest
+Test: testSetActiveLayer() took 1 sec(s)
+Test: testHideLayerKeepsActive() took 67 milli sec(s)
+Test: testHideLayerFromVisibleInactive() took 77 milli sec(s)
+Test: testSwitchActiveLayer() took 73 milli sec(s)
+Test: testShowHiddenLayer() took 62 milli sec(s)
+Test: testHiddenLayerCanBeActive() took 62 milli sec(s)
+Tests run: 6, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 2 sec(s)
+------- ---------------
+------------- Standard Error ---------------
+2026-02-11 21:46:06.968 WARNING: Using fake clipboard.
+------------- ---------------- ---------------

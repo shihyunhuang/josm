@@ -1,44 +1,44 @@
 Testcase: org.openstreetmap.josm.gui.MainApplicationTest
-Test: testPostConstructorProcessCmdLineFilename() took 183 milli sec(s)
-Test: testMapFrameListener() took 92 milli sec(s)
-Test: testParamType() took 90 milli sec(s)
-Test: testGetRegisteredActionShortcut() took 89 milli sec(s)
-Test: testPostConstructorProcessCmdLineFileUrl() took 107 milli sec(s)
-Test: testEnumDownloadParamType() took 92 milli sec(s)
-Test: testShowVersion() took 91 milli sec(s)
-Test: testShowHelp() took 91 milli sec(s)
-Test: testSetupUIManager() took 196 milli sec(s)
-Test: testPostConstructorProcessCmdLineBounds() took 2 sec(s)
-Test: testPostConstructorProcessCmdLineEmpty() took 95 milli sec(s)
-Test: testPostConstructorProcessCmdLineHttpUrl() took 877 milli sec(s)
+Test: testPostConstructorProcessCmdLineFilename() took 226 milli sec(s)
+Test: testMapFrameListener() took 83 milli sec(s)
+Test: testParamType() took 82 milli sec(s)
+Test: testGetRegisteredActionShortcut() took 86 milli sec(s)
+Test: testPostConstructorProcessCmdLineFileUrl() took 102 milli sec(s)
+Test: testEnumDownloadParamType() took 82 milli sec(s)
+Test: testShowVersion() took 80 milli sec(s)
+Test: testShowHelp() took 83 milli sec(s)
+Test: testSetupUIManager() took 166 milli sec(s)
+Test: testPostConstructorProcessCmdLineBounds() took 3 sec(s)
+Test: testPostConstructorProcessCmdLineEmpty() took 87 milli sec(s)
+Test: testPostConstructorProcessCmdLineHttpUrl() took 1 sec(s)
 Test: testUpdateAndLoadPlugins() took 3 sec(s)
-Tests run: 13, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 8 sec(s)
-20:41:46.829 INFO: Open file: /Users/petechentw/Documents/261P_Project/josm/test/data/multipolygon.osm (3063 bytes)
-2026-02-04 20:41:46.842 INFO: Open file: /Users/petechentw/Documents/261P_Project/josm/test/data/multipolygon.osm (3063 bytes) completed in 12 ms
-2026-02-04 20:41:47.916 INFO: GET https://api06.dev.openstreetmap.org/api/0.6/map?bbox=-126.75,-47.2,-126.65,-47.1 -> HTTP/1.1 200 (474 ms)
-2026-02-04 20:41:48.893 INFO: GET https://api06.dev.openstreetmap.org/api/0.6/trackpoints?bbox=-0.4,51.35,0.2,51.6&page=0 -> HTTP/1.1 200 (915 ms)
-2026-02-04 20:41:49.525 INFO: Keystroke ctrl pressed L is already assigned to org.openstreetmap.josm.actions.OpenLocationAction@10cc849c, will be overridden by org.openstreetmap.josm.actions.OpenLocationAction@716e2397
-2026-02-04 20:41:49.525 INFO: Registered toolbar action openlocation overwritten: org.openstreetmap.josm.actions.OpenLocationAction gets org.openstreetmap.josm.actions.OpenLocationAction
-2026-02-04 20:41:49.686 INFO: GET https://api06.dev.openstreetmap.org/api/0.6/map?bbox=-126.75,-47.20,-126.65,-47.10 -> HTTP/1.1 200 (158 ms)
-2026-02-04 20:41:50.167 INFO: GET https://api06.dev.openstreetmap.org/api/0.6/trackpoints?bbox=-0.4,51.35,0.2,51.6&page=0 -> HTTP/1.1 200 (462 ms)
-2026-02-04 20:41:51.352 INFO: GET https://josm.openstreetmap.de/pluginicons -> HTTP/1.1 200 (912 ms)
-2026-02-04 20:41:53.877 INFO: loading plugin 'log4j' (version 36474)
-2026-02-04 20:41:53.881 INFO: loading plugin 'buildings_tools' (version 36474)
-2026-02-04 20:41:53.887 INFO: Could not load tool definition save
-2026-02-04 20:41:53.887 INFO: Could not load tool definition splitway
-2026-02-04 20:41:53.887 INFO: Could not load tool definition tagginggroup_Highways/Streets
-2026-02-04 20:41:53.887 INFO: Could not load tool definition tagginggroup_Highways/Ways
-2026-02-04 20:41:53.887 INFO: Could not load tool definition tagginggroup_Highways/Waypoints
-2026-02-04 20:41:53.887 INFO: Could not load tool definition tagginggroup_Highways/Barriers
-2026-02-04 20:41:53.887 INFO: Could not load tool definition tagginggroup_Transport/Car
-2026-02-04 20:41:53.887 INFO: Could not load tool definition tagginggroup_Transport/Public Transport
-2026-02-04 20:41:53.887 INFO: Could not load tool definition tagginggroup_Facilities/Tourism
-2026-02-04 20:41:53.887 INFO: Could not load tool definition tagginggroup_Facilities/Food+Drinks
-2026-02-04 20:41:53.887 INFO: Could not load tool definition tagginggroup_Man Made/Historic Places
-2026-02-04 20:41:53.887 INFO: Could not load tool definition tagginggroup_Man Made/Man Made
+Tests run: 13, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 10 sec(s)
+6-02-11 20:43:50.203 INFO: Open file: /Users/petechentw/Documents/261P_Project/josm/test/data/multipolygon.osm (3063 bytes)
+2026-02-11 20:43:50.217 INFO: Open file: /Users/petechentw/Documents/261P_Project/josm/test/data/multipolygon.osm (3063 bytes) completed in 13 ms
+2026-02-11 20:43:51.773 INFO: GET https://api06.dev.openstreetmap.org/api/0.6/map?bbox=-126.75,-47.2,-126.65,-47.1 -> HTTP/1.1 200 (1.0 s)
+2026-02-11 20:43:53.206 INFO: GET https://api06.dev.openstreetmap.org/api/0.6/trackpoints?bbox=-0.4,51.35,0.2,51.6&page=0 -> HTTP/1.1 200 (1.4 s)
+2026-02-11 20:43:53.881 INFO: Keystroke ctrl pressed L is already assigned to org.openstreetmap.josm.actions.OpenLocationAction@d38ee13, will be overridden by org.openstreetmap.josm.actions.OpenLocationAction@1eca537e
+2026-02-11 20:43:53.881 INFO: Registered toolbar action openlocation overwritten: org.openstreetmap.josm.actions.OpenLocationAction gets org.openstreetmap.josm.actions.OpenLocationAction
+2026-02-11 20:43:54.231 INFO: GET https://api06.dev.openstreetmap.org/api/0.6/map?bbox=-126.75,-47.20,-126.65,-47.10 -> HTTP/1.1 200 (347 ms)
+2026-02-11 20:43:55.050 INFO: GET https://api06.dev.openstreetmap.org/api/0.6/trackpoints?bbox=-0.4,51.35,0.2,51.6&page=0 -> HTTP/1.1 200 (783 ms)
+2026-02-11 20:43:56.721 INFO: GET https://josm.openstreetmap.de/pluginicons -> HTTP/1.1 200 (1.5 s)
+2026-02-11 20:43:58.528 INFO: loading plugin 'log4j' (version 36474)
+2026-02-11 20:43:58.532 INFO: loading plugin 'buildings_tools' (version 36474)
+2026-02-11 20:43:58.539 INFO: Could not load tool definition save
+2026-02-11 20:43:58.539 INFO: Could not load tool definition splitway
+2026-02-11 20:43:58.539 INFO: Could not load tool definition tagginggroup_Highways/Streets
+2026-02-11 20:43:58.539 INFO: Could not load tool definition tagginggroup_Highways/Ways
+2026-02-11 20:43:58.539 INFO: Could not load tool definition tagginggroup_Highways/Waypoints
+2026-02-11 20:43:58.539 INFO: Could not load tool definition tagginggroup_Highways/Barriers
+2026-02-11 20:43:58.539 INFO: Could not load tool definition tagginggroup_Transport/Car
+2026-02-11 20:43:58.539 INFO: Could not load tool definition tagginggroup_Transport/Public Transport
+2026-02-11 20:43:58.539 INFO: Could not load tool definition tagginggroup_Facilities/Tourism
+2026-02-11 20:43:58.539 INFO: Could not load tool definition tagginggroup_Facilities/Food+Drinks
+2026-02-11 20:43:58.539 INFO: Could not load tool definition tagginggroup_Man Made/Historic Places
+2026-02-11 20:43:58.539 INFO: Could not load tool definition tagginggroup_Man Made/Man Made
 ------------- ---------------- ---------------
 ------------- Standard Error ---------------
-2026-02-04 20:41:47.292 SEVERE: Handled by bug report queue: java.lang.UnsupportedOperationException: Test failure loading
+2026-02-11 20:43:50.605 SEVERE: Handled by bug report queue: java.lang.UnsupportedOperationException: Test failure loading
 java.lang.UnsupportedOperationException: Test failure loading
 	at org.openstreetmap.josm.gui.MainApplicationTest$BadLaf.getDefaults(MainApplicationTest.java:362)
 	at java.desktop/javax.swing.UIManager.setLookAndFeel(UIManager.java:584)
@@ -107,8 +107,7 @@ java.lang.UnsupportedOperationException: Test failure loading
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:41:50.422 WARNING: Missing plugin main version in plugin panoramax
-2026-02-04 20:41:50.428 WARNING: java.util.zip.ZipException: zip END header not found
+2026-02-11 20:43:55.210 WARNING: java.util.zip.ZipException: zip END header not found
 java.util.zip.ZipException: zip END header not found
 	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1693)
 	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1701)
@@ -134,9 +133,9 @@ java.util.zip.ZipException: zip END header not found
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
 
-2026-02-04 20:41:50.428 WARNING: PluginException: : org.openstreetmap.josm.plugins.PluginException: Invalid jar file '/Users/petechentw/Documents/261P_Project/josm/test/config/unit-josm.home/plugins/corrupted_plugin.jar'
-2026-02-04 20:41:50.428 WARNING: Failed to scan file 'corrupted_plugin.jar' for plugin information. Skipping.
-2026-02-04 20:41:50.429 WARNING: java.util.zip.ZipException: zip END header not found
+2026-02-11 20:43:55.210 WARNING: PluginException: : org.openstreetmap.josm.plugins.PluginException: Invalid jar file '/Users/petechentw/Documents/261P_Project/josm/test/config/unit-josm.home/plugins/corrupted_plugin.jar'
+2026-02-11 20:43:55.210 WARNING: Failed to scan file 'corrupted_plugin.jar' for plugin information. Skipping.
+2026-02-11 20:43:55.211 WARNING: java.util.zip.ZipException: zip END header not found
 java.util.zip.ZipException: zip END header not found
 	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1693)
 	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1701)
@@ -162,12 +161,10 @@ java.util.zip.ZipException: zip END header not found
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
 
-2026-02-04 20:41:50.429 WARNING: PluginException: : org.openstreetmap.josm.plugins.PluginException: Invalid jar file '/Users/petechentw/Documents/261P_Project/josm/test/config/unit-josm.home/plugins/corrupted_plugin.jar.new'
-2026-02-04 20:41:50.429 WARNING: Failed to scan file 'corrupted_plugin.jar.new' for plugin information. Skipping.
-2026-02-04 20:41:50.438 WARNING: Update plugins - You updated your JOSM software. To prevent problems the plugins should be updated as well.  Update plugins now?
-2026-02-04 20:41:53.863 WARNING: Missing plugin main version in plugin panoramax
-2026-02-04 20:41:53.873 WARNING: Missing plugin main version in plugin panoramax
-2026-02-04 20:41:53.874 WARNING: java.util.zip.ZipException: zip END header not found
+2026-02-11 20:43:55.211 WARNING: PluginException: : org.openstreetmap.josm.plugins.PluginException: Invalid jar file '/Users/petechentw/Documents/261P_Project/josm/test/config/unit-josm.home/plugins/corrupted_plugin.jar.new'
+2026-02-11 20:43:55.211 WARNING: Failed to scan file 'corrupted_plugin.jar.new' for plugin information. Skipping.
+2026-02-11 20:43:55.219 WARNING: Update plugins - You updated your JOSM software. To prevent problems the plugins should be updated as well.  Update plugins now?
+2026-02-11 20:43:58.525 WARNING: java.util.zip.ZipException: zip END header not found
 java.util.zip.ZipException: zip END header not found
 	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1693)
 	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1701)
@@ -193,9 +190,9 @@ java.util.zip.ZipException: zip END header not found
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
 
-2026-02-04 20:41:53.875 WARNING: PluginException: : org.openstreetmap.josm.plugins.PluginException: Invalid jar file '/Users/petechentw/Documents/261P_Project/josm/test/config/unit-josm.home/plugins/corrupted_plugin.jar'
-2026-02-04 20:41:53.875 WARNING: Failed to scan file 'corrupted_plugin.jar' for plugin information. Skipping.
-2026-02-04 20:41:53.875 WARNING: java.util.zip.ZipException: zip END header not found
+2026-02-11 20:43:58.525 WARNING: PluginException: : org.openstreetmap.josm.plugins.PluginException: Invalid jar file '/Users/petechentw/Documents/261P_Project/josm/test/config/unit-josm.home/plugins/corrupted_plugin.jar'
+2026-02-11 20:43:58.526 WARNING: Failed to scan file 'corrupted_plugin.jar' for plugin information. Skipping.
+2026-02-11 20:43:58.526 WARNING: java.util.zip.ZipException: zip END header not found
 java.util.zip.ZipException: zip END header not found
 	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1693)
 	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1701)
@@ -221,7 +218,7 @@ java.util.zip.ZipException: zip END header not found
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
 
-2026-02-04 20:41:53.875 WARNING: PluginException: : org.openstreetmap.josm.plugins.PluginException: Invalid jar file '/Users/petechentw/Documents/261P_Project/josm/test/config/unit-josm.home/plugins/corrupted_plugin.jar.new'
-2026-02-04 20:41:53.875 WARNING: Failed to scan file 'corrupted_plugin.jar.new' for plugin information. Skipping.
-2026-02-04 20:41:53.876 WARNING: Failed to install plugin '/Users/petechentw/Documents/261P_Project/josm/test/config/unit-josm.home/plugins/corrupted_plugin.jar' from temporary download file '/Users/petechentw/Documents/261P_Project/josm/test/config/unit-josm.home/plugins/corrupted_plugin.jar.new'. zip END header not found: java.util.zip.ZipException: zip END header not found
+2026-02-11 20:43:58.526 WARNING: PluginException: : org.openstreetmap.josm.plugins.PluginException: Invalid jar file '/Users/petechentw/Documents/261P_Project/josm/test/config/unit-josm.home/plugins/corrupted_plugin.jar.new'
+2026-02-11 20:43:58.526 WARNING: Failed to scan file 'corrupted_plugin.jar.new' for plugin information. Skipping.
+2026-02-11 20:43:58.526 WARNING: Failed to install plugin '/Users/petechentw/Documents/261P_Project/josm/test/config/unit-josm.home/plugins/corrupted_plugin.jar' from temporary download file '/Users/petechentw/Documents/261P_Project/josm/test/config/unit-josm.home/plugins/corrupted_plugin.jar.new'. zip END header not found: java.util.zip.ZipException: zip END header not found
 ------------- ---------------- ---------------

@@ -1,7 +1,7 @@
 Testcase: org.openstreetmap.josm.actions.SessionLoadActionTest
-Test: testTicket17702() took 87 milli sec(s)
-Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 136 milli sec(s)
-2026-02-04 20:40:34.198 SEVERE: org.openstreetmap.josm.tools.bugreport.ReportedException: java.lang.reflect.InvocationTargetException. Cause: java.lang.reflect.InvocationTargetException. Cause: org.openstreetmap.josm.tools.bugreport.ReportedException: java.lang.IllegalArgumentException: {$q} is not a valid TMS argument. Please check this server URL:
+Test: testTicket17702() took 88 milli sec(s)
+Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 124 milli sec(s)
+2026-02-11 20:46:00.031 SEVERE: org.openstreetmap.josm.tools.bugreport.ReportedException: java.lang.reflect.InvocationTargetException. Cause: java.lang.reflect.InvocationTargetException. Cause: org.openstreetmap.josm.tools.bugreport.ReportedException: java.lang.IllegalArgumentException: {$q} is not a valid TMS argument. Please check this server URL:
 http://ecn.dynamic.t{switch:1,2,3}.tiles.virtualearth.net/comp/ch/{$q}?mkt=en-us&it=G,VE,BX,L,LA&shading=hill&og=2&n=z. Cause: java.lang.IllegalArgumentException: {$q} is not a valid TMS argument. Please check this server URL:
 http://ecn.dynamic.t{switch:1,2,3}.tiles.virtualearth.net/comp/ch/{$q}?mkt=en-us&it=G,VE,BX,L,LA&shading=hill&og=2&n=z
 ReportedException [thread=Thread[#310,ForkJoinPool-26-worker-1,5,main], exception=java.lang.reflect.InvocationTargetException, methodWarningFrom=null]
@@ -73,7 +73,7 @@ Caused by: java.lang.reflect.InvocationTargetException
 	at java.desktop/javax.swing.SwingUtilities.invokeAndWait(SwingUtilities.java:1474)
 	at org.openstreetmap.josm.gui.util.GuiHelper.runInEDTAndWaitWithException(GuiHelper.java:250)
 	... 60 more
-Caused by: ReportedException [thread=Thread[#38,AWT-EventQueue-0,6,main], exception=java.lang.IllegalArgumentException: {$q} is not a valid TMS argument. Please check this server URL:
+Caused by: ReportedException [thread=Thread[#139,AWT-EventQueue-0,6,main], exception=java.lang.IllegalArgumentException: {$q} is not a valid TMS argument. Please check this server URL:
 http://ecn.dynamic.t{switch:1,2,3}.tiles.virtualearth.net/comp/ch/{$q}?mkt=en-us&it=G,VE,BX,L,LA&shading=hill&og=2&n=z, methodWarningFrom=null]
 	at org.openstreetmap.josm.tools.bugreport.BugReport.intercept(BugReport.java:222)
 	at org.openstreetmap.josm.gui.MapView.layerAdded(MapView.java:383)

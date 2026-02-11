@@ -1,16 +1,16 @@
 Testcase: org.openstreetmap.josm.gui.preferences.server.ApiUrlTestTaskTest
-Test: testAlertInvalidCapabilities() took 16 milli sec(s)
+Test: testAlertInvalidCapabilities() took 14 milli sec(s)
 Test: testNominalUrl() took 1 milli sec(s)
 Test: testNullApiUrl() took 0 milli sec(s)
-Test: testUnknownHost() took 18 milli sec(s)
+Test: testUnknownHost() took 11 milli sec(s)
 Test: testAlertInvalidUrl() took 1 milli sec(s)
 Test: testAlertInvalidServerResult() took 3 milli sec(s)
-Tests run: 6, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 341 milli sec(s)
--04 20:42:47.243 INFO: GET http://unknown/0.6/capabilities -> !!! (16 ms)
-2026-02-04 20:42:47.247 INFO: GET http://localhost:58845/does-not-exist/0.6/capabilities -> HTTP/1.1 404 (1 ms)
+Tests run: 6, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 329 milli sec(s)
+11 20:08:52.769 INFO: GET http://unknown/0.6/capabilities -> !!! (9 ms)
+2026-02-11 20:08:52.773 INFO: GET http://localhost:57825/does-not-exist/0.6/capabilities -> HTTP/1.1 404 (1 ms)
 ------------- ---------------- ---------------
 ------------- Standard Error ---------------
-2026-02-04 20:42:47.221 WARNING: org.xml.sax.SAXParseException: Content is not allowed in prolog.
+2026-02-11 20:08:52.755 WARNING: org.xml.sax.SAXParseException: Content is not allowed in prolog.
 org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
 	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
 	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
@@ -92,8 +92,8 @@ org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not al
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:42:47.223 SEVERE: Connection to API failed - <html>The OSM API server at 'http://localhost:58845/__files/invalid_api' did not return a valid response.<br>It is likely that 'http://localhost:58845/__files/invalid_api' is not an OSM API server.<br>Please check the spelling of 'http://localhost:58845/__files/invalid_api' and validate again.</html>
-2026-02-04 20:42:47.243 WARNING: java.net.UnknownHostException: unknown
+2026-02-11 20:08:52.757 SEVERE: Connection to API failed - <html>The OSM API server at 'http://localhost:57825/__files/invalid_api' did not return a valid response.<br>It is likely that 'http://localhost:57825/__files/invalid_api' is not an OSM API server.<br>Please check the spelling of 'http://localhost:57825/__files/invalid_api' and validate again.</html>
+2026-02-11 20:08:52.769 WARNING: java.net.UnknownHostException: unknown
 java.net.UnknownHostException: unknown
 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:569)
 	at java.base/java.net.Socket.connect(Socket.java:659)
@@ -174,7 +174,7 @@ java.net.UnknownHostException: unknown
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:42:47.243 SEVERE: java.net.UnknownHostException: unknown
+2026-02-11 20:08:52.769 SEVERE: java.net.UnknownHostException: unknown
 java.net.UnknownHostException: unknown
 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:569)
 	at java.base/java.net.Socket.connect(Socket.java:659)
@@ -255,7 +255,7 @@ java.net.UnknownHostException: unknown
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
 
-2026-02-04 20:42:47.244 SEVERE: Connection to API failed - <html>Failed to connect to the URL 'http://unknown'.<br>Please check the spelling of 'http://unknown' and your Internet connection and validate again.</html>
-2026-02-04 20:42:47.245 SEVERE: Invalid API URL - <html>'malformed url' is not a valid OSM API URL.<br>Please check the spelling and validate again.</html>
-2026-02-04 20:42:47.248 SEVERE: Connection to API failed - <html>Failed to retrieve a list of changesets from the OSM API server at<br>'http://localhost:58845/does-not-exist'. The server responded with the return code 404 instead of 200.<br>Please check the spelling of 'http://localhost:58845/does-not-exist' and validate again.</html>
+2026-02-11 20:08:52.770 SEVERE: Connection to API failed - <html>Failed to connect to the URL 'http://unknown'.<br>Please check the spelling of 'http://unknown' and your Internet connection and validate again.</html>
+2026-02-11 20:08:52.771 SEVERE: Invalid API URL - <html>'malformed url' is not a valid OSM API URL.<br>Please check the spelling and validate again.</html>
+2026-02-11 20:08:52.774 SEVERE: Connection to API failed - <html>Failed to retrieve a list of changesets from the OSM API server at<br>'http://localhost:57825/does-not-exist'. The server responded with the return code 404 instead of 200.<br>Please check the spelling of 'http://localhost:57825/does-not-exist' and validate again.</html>
 ------------- ---------------- ---------------

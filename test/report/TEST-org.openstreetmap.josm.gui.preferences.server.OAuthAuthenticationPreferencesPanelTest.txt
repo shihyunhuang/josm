@@ -1,12 +1,12 @@
 Testcase: org.openstreetmap.josm.gui.preferences.server.OAuthAuthenticationPreferencesPanelTest
 Test: testRemoveToken(OAuthVersion)[1] took 1 sec(s)
 Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 1 sec(s)
--04 20:42:48.058 INFO: GET https://api.openstreetmap.org/api/capabilities -> HTTP/1.1 200 (503 ms; 493 B)
-2026-02-04 20:42:48.058 INFO: OK
-2026-02-04 20:42:48.662 INFO: GET https://api.openstreetmap.org/api/0.6/user/details -> HTTP/1.1 401 (495 ms)
+-11 20:08:53.584 INFO: GET https://api.openstreetmap.org/api/capabilities -> HTTP/1.1 200 (503 ms; 493 B)
+2026-02-11 20:08:53.585 INFO: OK
+2026-02-11 20:08:54.264 INFO: GET https://api.openstreetmap.org/api/0.6/user/details -> HTTP/1.1 401 (568 ms)
 ------------- ---------------- ---------------
 ------------- Standard Error ---------------
-2026-02-04 20:42:48.663 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=401
+2026-02-11 20:08:54.265 SEVERE: org.openstreetmap.josm.io.OsmApiException: ResponseCode=401
 org.openstreetmap.josm.io.OsmApiException: ResponseCode=401
 	at org.openstreetmap.josm.io.OsmServerReader.getInputStreamRaw(OsmServerReader.java:211)
 	at org.openstreetmap.josm.io.OsmServerReader.getInputStreamRaw(OsmServerReader.java:142)
