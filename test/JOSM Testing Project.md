@@ -45,7 +45,7 @@ The Undo / Redo command history feature in JOSM lends itself well to a finite st
   Clears/reset the command history. 
 
 
-####State Diagram:
+#### State Diagram:
 
 
 ### New Functional test
