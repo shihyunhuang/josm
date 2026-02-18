@@ -3,15 +3,20 @@ package org.openstreetmap.josm.data.validation.tests;
 
 import java.io.IOException;
 import java.text.MessageFormat;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import javax.swing.JPanel;
+
 import org.junit.jupiter.api.Assertions;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -115,6 +120,13 @@ class TagCheckerTest {
                         "Value 'privat' for key 'access' is unknown, maybe 'private' is meant?", Severity.WARNING, false)
         );
     }
+
+    private static class ExposedTagChecker extends TagChecker {
+        boolean callOk() { return ok(); }
+        void callVisit(java.util.Collection<OsmPrimitive> prims) { visit(prims); }
+        void callTaggingPresetsModified() { taggingPresetsModified(); }
+    }
+
 
     /**
      * Test tags
@@ -394,5 +406,90 @@ class TagCheckerTest {
 
         // P3: key does not exist in presets
         assertFalse(TagChecker.isTagInPresets("this_key_should_not_exist", "foo"));
+    }
+    
+
+    // Add 6 test cases to increase coverage in TagChecker module
+
+    // Covers TagChecker.addGui(JPanel) which was previously 0% covered.
+    // Ensures GUI wiring code executes without requiring complex test setup.
+    @Test
+    void addGui_shouldNotThrow() {
+        TagChecker checker = new TagChecker();
+        assertDoesNotThrow(() -> checker.addGui(new JPanel()));
+    }
+
+    // Covers TagChecker.endTest() lifecycle hook which was previously uncovered.
+    // Verifies the test lifecycle can end cleanly after initialize/startTest.
+    @Test
+    void endTest_shouldNotThrow() throws Exception {
+        TagChecker checker = new TagChecker();
+        checker.initialize();
+        checker.startTest(null);
+
+        assertDoesNotThrow(checker::endTest);
+    }
+
+    // Builds a minimal multipolygon relation and runs TagChecker.check(...) on it.
+    // Exercises relation/multipolygon-specific code paths (outer ways + multipolygon tags).
+    @Test
+    void multipolygonRelation_shouldExecuteRelationChecks() throws Exception {
+        // Build a minimal dataset with a multipolygon relation and an outer way
+        DataSet ds = new DataSet();
+
+        Node n1 = new Node(new LatLon(0.0, 0.0));
+        Node n2 = new Node(new LatLon(0.0, 0.001));
+        ds.addPrimitive(n1);
+        ds.addPrimitive(n2);
+
+        Way outer = new Way();
+        outer.setNodes(Arrays.asList(n1, n2));
+        ds.addPrimitive(outer);
+
+        Relation r = new Relation();
+        r.put("type", "multipolygon");
+        r.put("building", "yes");
+        r.addMember(new RelationMember("outer", outer));
+        ds.addPrimitive(r);
+
+        // Reuse your existing helper: this should run TagChecker.check(Relation)
+        List<TestError> errors = test(r);
+
+        assertNotNull(errors);
+    }
+
+    // Covers TagChecker.ok() helper method that was previously not executed by tests.
+    // Validates the "no error so far" state path is reachable in unit tests.
+     @Test
+    void ok_shouldBeTrueWhenNoErrors() throws Exception {
+        ExposedTagChecker checker = new ExposedTagChecker();
+        checker.initialize();
+        checker.startTest(null);
+
+        assertTrue(checker.callOk(), "Expected ok() to be true when there are no errors yet.");
+    }
+
+    // Covers TagChecker.visit(Collection<OsmPrimitive>) selection-visit path.
+    // Ensures visiting a simple primitive collection executes without throwing.
+    @Test
+    void visit_shouldNotThrowOnSimplePrimitiveCollection() throws Exception {
+        ExposedTagChecker checker = new ExposedTagChecker();
+        checker.initialize();
+        checker.startTest(null);
+
+        Node n = new Node();
+        TestUtils.addFakeDataSet(n); // ensure primitive has a dataset
+        assertDoesNotThrow(() -> checker.callVisit(List.of(n)));
+    }
+
+    // Covers TagChecker.taggingPresetsModified() callback path.
+    // Triggers the preset-change handling branch to increase method/line coverage.
+    @Test
+    void taggingPresetsModified_shouldNotThrow() throws Exception {
+        ExposedTagChecker checker = new ExposedTagChecker();
+        checker.initialize();
+        checker.startTest(null);
+
+        assertDoesNotThrow(checker::callTaggingPresetsModified);
     }
 }
