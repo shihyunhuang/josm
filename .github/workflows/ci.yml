@@ -1,0 +1,30 @@
+name: JOSM CI
+
+on:
+  push:
+    branches:
+      - Chung-Ping_Chen   # 改成你要測試的 branch
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Install Ant
+      run: sudo apt-get update && sudo apt-get install -y ant
+
+    - name: Compile Project
+      run: ant clean compile
+
+    - name: Run Tests
+      run: ant test -Djava.awt.headless=true
