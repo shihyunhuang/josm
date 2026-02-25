@@ -20,11 +20,6 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Install Ant
-      run: sudo apt-get update && sudo apt-get install -y ant
-
-    - name: Compile Project
-      run: ant clean compile
 
     - name: Run Tests
       run: ant test -Djava.awt.headless=true
