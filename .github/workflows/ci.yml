@@ -3,23 +3,23 @@ name: JOSM CI
 on:
   push:
     branches:
-      - Chung-Ping_Chen   # 改成你要測試的 branch
+      - Chung-Ping_Chen
   pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
+      - name: Checkout (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin'
-        java-version: '17'
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
 
-
-    - name: Run Tests
-      run: ant -Djava.awt.headless=true clean test
+      - name: Build + Run tests
+        run: ant -Djava.awt.headless=true clean test
