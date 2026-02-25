@@ -2,14 +2,16 @@ name: SWE261P CI (PR gate)
 
 on:
   pull_request:
-    branches: [ "master" ]   # PR 的目標分支是 master 才會跑
+    branches: [ "master" ]
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout (full history for revision metadata)
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -17,5 +19,5 @@ jobs:
           distribution: temurin
           java-version: "17"
 
-      - name: Build + Run tests
-        run: ant clean test
+      - name: Build + Run tests (headless)
+        run: ant -Djava.awt.headless=true clean test
