@@ -22,4 +22,4 @@ jobs:
 
 
     - name: Run Tests
-      run: ant test -Djava.awt.headless=true
+      run: ant test -Djava.awt.headless=true clean test
