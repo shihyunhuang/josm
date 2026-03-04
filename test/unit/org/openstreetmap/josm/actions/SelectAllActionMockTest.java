@@ -10,7 +10,7 @@ class SelectAllActionMockTest {
 
     @Test
     void testSelectAllInvokesGetNodes(@Mocked DataSet dataSet) {
-
+        // when getnodes has been called, return emptylist (stubbing)
         new Expectations() {{
             dataSet.getNodes();
             result = java.util.Collections.emptyList();

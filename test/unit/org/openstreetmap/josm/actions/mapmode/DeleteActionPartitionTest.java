@@ -37,10 +37,8 @@ public class DeleteActionPartitionTest {
         primitives.add(n);
 
         Collection<OsmPrimitive> ignore = Collections.emptyList();
-
-        assertDoesNotThrow(() ->
-            DeleteAction.checkAndConfirmOutlyingDelete(primitives, ignore)
-        );
+        // Deleting only nodes should not crash
+        assertDoesNotThrow(() ->DeleteAction.checkAndConfirmOutlyingDelete(primitives, ignore));
     }
 
     /**
@@ -55,9 +53,7 @@ public class DeleteActionPartitionTest {
 
         Collection<OsmPrimitive> ignore = Collections.emptyList();
 
-        assertDoesNotThrow(() ->
-            DeleteAction.checkAndConfirmOutlyingDelete(primitives, ignore)
-        );
+        assertDoesNotThrow(() ->DeleteAction.checkAndConfirmOutlyingDelete(primitives, ignore));
     }
 
     /**
@@ -72,9 +68,7 @@ public class DeleteActionPartitionTest {
 
         Collection<OsmPrimitive> ignore = Collections.emptyList();
 
-        assertDoesNotThrow(() ->
-            DeleteAction.checkAndConfirmOutlyingDelete(primitives, ignore)
-        );
+        assertDoesNotThrow(() ->DeleteAction.checkAndConfirmOutlyingDelete(primitives, ignore));
     }
 
     /**
@@ -91,9 +85,7 @@ public class DeleteActionPartitionTest {
 
         Collection<OsmPrimitive> ignore = Collections.emptyList();
 
-        assertDoesNotThrow(() ->
-            DeleteAction.checkAndConfirmOutlyingDelete(primitives, ignore)
-        );
+        assertDoesNotThrow(() ->DeleteAction.checkAndConfirmOutlyingDelete(primitives, ignore));
     }
 
     /**
@@ -112,8 +104,6 @@ public class DeleteActionPartitionTest {
 
         Collection<OsmPrimitive> ignore = Collections.emptyList();
 
-        assertDoesNotThrow(() ->
-            DeleteAction.checkAndConfirmOutlyingDelete(primitives, ignore)
-        );
+        assertDoesNotThrow(() ->DeleteAction.checkAndConfirmOutlyingDelete(primitives, ignore));
     }
 }

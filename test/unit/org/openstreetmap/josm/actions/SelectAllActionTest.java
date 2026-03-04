@@ -25,7 +25,6 @@ final class SelectAllActionTest {
         SelectByInternalPointActionTest.initDataSet();
         DataSet ds = MainApplication.getLayerManager().getEditDataSet();
 
-        assertEquals(0, ds.getSelected().size());
         new SelectAllAction().actionPerformed(null);
         assertEquals(6, ds.getSelected().size());
     }

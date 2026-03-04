@@ -23,6 +23,7 @@ class SelectAllActionStubTest {
         public void actionPerformed(java.awt.event.ActionEvent e) {
             
             // we simulate controlled behavior.
+            // make it predictable
             stubUsed = true;
         }
     }
