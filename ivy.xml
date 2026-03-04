@@ -71,5 +71,6 @@
         <dependency conf="test->default" org="nl.jqno.equalsverifier" name="equalsverifier" rev="3.18.1"/>
         <dependency conf="test->default" org="org.apache.commons" name="commons-lang3" rev="3.18.0"/>
         <dependency conf="test->default" org="org.awaitility" name="awaitility" rev="4.2.2"/>
+        <dependency conf="test->default" org="org.mockito" name="mockito-core" rev="5.+" />
     </dependencies>
 </ivy-module>
